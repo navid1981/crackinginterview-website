@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - CrackingInterview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-brand">
+        <img src="img/app-icon.png" alt="CrackingInterview">
+        Cracking<span>Interview</span>
+    </a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+    </div>
+</nav>
+
+<div class="page-container">
+    <h1>User Guide</h1>
+    <p>Everything you need to get started with CrackingInterview.</p>
+
+    <div class="toc">
+        <strong>Contents</strong>
+        <ol>
+            <li><a href="#g1">Getting Started</a></li>
+            <li><a href="#g2">Opening Chrome</a></li>
+            <li><a href="#g3">Selecting an Input Source</a></li>
+            <li><a href="#g4">Solving with AI — Text Extraction</a></li>
+            <li><a href="#g5">Solving with AI — Screenshot</a></li>
+            <li><a href="#g6">Solving with AI — Audio Recording</a> (Pro)</li>
+            <li><a href="#g7">Reading AI Responses</a></li>
+            <li><a href="#g8">Global Hotkeys</a></li>
+            <li><a href="#g9">Custom Prompts</a></li>
+            <li><a href="#g10">Settings</a></li>
+            <li><a href="#g11">Free vs Pro</a></li>
+            <li><a href="#g12">Using Your Own API Key</a> (Free users)</li>
+            <li><a href="#g13">Troubleshooting</a></li>
+        </ol>
+    </div>
+
+    <!-- 1 -->
+    <h2 id="g1">1. Getting Started</h2>
+
+    <h3>Prerequisites</h3>
+    <ul>
+        <li><strong>Google Chrome</strong> must be installed on your computer. The app connects to Chrome to read tabs and extract content.</li>
+    </ul>
+
+    <h3>macOS Permissions</h3>
+    <p>On first launch, macOS will ask you to grant permissions. Go to <strong>System Settings → Privacy &amp; Security</strong> and enable:</p>
+    <ul>
+        <li><strong>Accessibility</strong> — Required for global hotkeys to work system-wide.</li>
+        <li><strong>Screen &amp; System Audio Recording</strong> — Required for screenshot capture, display capture, and audio recording features.</li>
+    </ul>
+
+    <h3>Windows Permissions</h3>
+    <p>On Windows, allow the app through Windows Security / SmartScreen when prompted on first launch. No additional system permissions are required.</p>
+
+    <h3>First Steps</h3>
+    <div class="step">
+        <span class="step-number">1</span> <strong>Create an account</strong> — Open the app and sign up with your email and password.
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> <strong>Sign in</strong> — Enter your credentials. Check "Remember me" if you'd like your password to be pre-filled next time.
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> <strong>Open Chrome</strong> — Click the <strong>"Open Chrome"</strong> button in the header bar. This launches a Chrome window connected to the app.
+    </div>
+    <div class="step">
+        <span class="step-number">4</span> <strong>Navigate to a problem</strong> — In the Chrome window, go to a coding problem page.
+    </div>
+    <div class="step">
+        <span class="step-number">5</span> <strong>Select your input source</strong> — Use the Input Source dropdown to pick the Chrome tab.
+    </div>
+    <div class="step">
+        <span class="step-number">6</span> <strong>Hit Solve!</strong> — Click the Solve button and wait for the AI response.
+    </div>
+
+    <div class="info-box">
+        <h3>Always on Top &amp; Stealth Mode</h3>
+        <p>The app window <strong>always stays on top</strong> of other windows so your AI assistant is always visible while you work. It also runs in <strong>stealth mode</strong> — hidden from screen-sharing apps (Zoom, Teams), screenshots, Dock (macOS), and Taskbar (Windows).</p>
+    </div>
+
+    <img src="img/welcome.png" alt="CrackingInterview — Welcome screen after sign in" class="guide-screenshot" loading="lazy">
+
+    <!-- 2 -->
+    <h2 id="g2">2. Opening Chrome</h2>
+    <p>
+        CrackingInterview connects to Google Chrome through a special debugging protocol (Chrome DevTools Protocol). Chrome must be installed on your computer. You don't need to configure anything — just click the <strong>"Open Chrome"</strong> button in the header.
+    </p>
+    <ul>
+        <li>The app opens a separate Chrome window (it won't interfere with your regular Chrome sessions).</li>
+        <li>Once connected, the header shows <strong>"Chrome Ready"</strong> with a green indicator.</li>
+        <li>You can then navigate to any website in that Chrome window.</li>
+    </ul>
+    <div class="tip">
+        <strong>Tip:</strong> After Chrome opens and loads a page, click the <strong>refresh button</strong> next to the Input Source dropdown to update the list of available tabs.
+    </div>
+
+    <!-- 3 -->
+    <h2 id="g3">3. Selecting an Input Source</h2>
+    <p>The Input Source dropdown shows all available sources:</p>
+    <ul>
+        <li><strong>Chrome Tabs</strong> — Any open tab in the connected Chrome window (shows title + thumbnail)</li>
+        <li><strong>Display</strong> — Your screen(s) for full-screen capture (Pro only)</li>
+        <li><strong>Audio (System)</strong> — Record system audio and microphone (Pro only)</li>
+    </ul>
+    <p>Select the source you want to analyze, then click <strong>Solve</strong>.</p>
+
+    <img src="img/dropdown.png" alt="Input source dropdown with Chrome tabs and displays" class="guide-screenshot" loading="lazy">
+
+    <div class="tip">
+        <strong>Tip:</strong> If you opened new tabs or navigated to a new page, press the refresh button to update the list.
+    </div>
+
+    <!-- 4 -->
+    <h2 id="g4">4. Solving with AI — Text Extraction</h2>
+    <p>This is the default mode. The app extracts the text content from the selected Chrome tab and sends it to AI.</p>
+    <div class="step">
+        <span class="step-number">1</span> Select a <strong>Chrome tab</strong> from the Input Source dropdown.
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> Make sure <strong>"Text Extraction"</strong> is selected in Settings → Input Mode.
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> Click <strong>Solve</strong> (or press <span class="kbd">Cmd+1</span>).
+    </div>
+    <p>The progress stepper shows: <strong>Extract → Asking AI</strong>. Once complete, the explanation and solution appear.</p>
+
+    <img src="img/stepper.png" alt="Progress stepper showing Extract and Asking AI steps" class="guide-screenshot" loading="lazy">
+
+    <!-- 5 -->
+    <h2 id="g5">5. Solving with AI — Screenshot</h2>
+    <p>Screenshot mode captures a visual image of the tab or display and sends it to AI for analysis. Useful when the problem includes images, diagrams, or complex formatting.</p>
+    <div class="step">
+        <span class="step-number">1</span> Select your input source (Chrome tab or Display).
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> Select <strong>"Screenshot Capture"</strong> in Settings → Input Mode — or simply press <span class="kbd">Cmd+2</span>.
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> Click <strong>Solve</strong> (or press <span class="kbd">Cmd+2</span>).
+    </div>
+
+    <img src="img/input-mode.png" alt="Input Mode settings — Text Extraction and Screenshot Capture" class="guide-screenshot" loading="lazy">
+
+    <div class="tip">
+        <strong>Tip:</strong> If your input source is a <strong>Display</strong>, the app always uses screenshot mode automatically, even if Text Extraction is selected.
+    </div>
+
+    <!-- 6 -->
+    <h2 id="g6">6. Solving with AI — Audio Recording (Pro)</h2>
+    <p>Audio mode records system audio (e.g., from a Zoom or Teams call) and your microphone, then sends the recording to AI for analysis. This is designed for verbal interview practice.</p>
+    <div class="step">
+        <span class="step-number">1</span> Select <strong>"Audio (System)"</strong> from the Input Source dropdown.
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> The app automatically selects the <strong>"Verbal Interview"</strong> prompt.
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> Click <strong>Solve</strong> (or press <span class="kbd">Cmd+3</span>) to start recording.
+    </div>
+    <div class="step">
+        <span class="step-number">4</span> The timer shows recording duration. Speak or let the audio play.
+    </div>
+    <div class="step">
+        <span class="step-number">5</span> Click <strong>Stop</strong> (or press <span class="kbd">Cmd+3</span> again) to stop and send to AI.
+    </div>
+    <div class="warning">
+        <strong>Note:</strong> Audio recording has a 3-minute maximum. The recording automatically stops and sends to AI after 3 minutes. Audio is a <strong>Pro-only</strong> feature.
+    </div>
+
+    <!-- 7 -->
+    <h2 id="g7">7. Reading AI Responses</h2>
+    <p>After the AI processes your request, you'll see two sections:</p>
+    <ul>
+        <li><strong>Explanation</strong> — A detailed walkthrough of the approach, algorithm, and reasoning. Click the header to collapse/expand it.</li>
+        <li><strong>Solution</strong> — The complete code solution with syntax highlighting. Click <strong>"Copy Code"</strong> to copy it to your clipboard.</li>
+    </ul>
+    <p>Both sections can be closed with the close button. They automatically reappear when you run a new Solve.</p>
+
+    <img src="img/explanation.png" alt="AI explanation with approach, complexity analysis, and walkthrough" class="guide-screenshot" loading="lazy">
+    <img src="img/solution.png" alt="AI solution with syntax-highlighted code and Copy Code button" class="guide-screenshot" loading="lazy">
+
+    <!-- 8 -->
+    <h2 id="g8">8. Global Hotkeys</h2>
+    <p>Hotkeys work even when the app is in the background, so you can trigger actions without switching windows.</p>
+
+    <table class="data-table">
+        <tr>
+            <th>Default Shortcut</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+1</span></td>
+            <td>Extract text from selected source → Solve</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+2</span></td>
+            <td>Screenshot selected source → Solve</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+3</span></td>
+            <td>Start/Stop audio recording → Solve</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+Up</span></td>
+            <td>Scroll up (Explanation)</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+Down</span></td>
+            <td>Scroll down (Explanation)</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+Shift+Up/Down/Left/Right</span></td>
+            <td>Move the app window</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+Shift+H</span></td>
+            <td>Show/Hide the app window</td>
+        </tr>
+        <tr>
+            <td><span class="kbd">Cmd+Shift+Q</span></td>
+            <td>Quit the app</td>
+        </tr>
+    </table>
+
+    <p>All hotkeys can be customized in <strong>Settings → HotKeys</strong>.</p>
+
+    <img src="img/hotkeys.png" alt="Hotkeys settings showing Solve, Navigation, and App sections" class="guide-screenshot" loading="lazy">
+
+    <div class="tip">
+        <strong>Tip:</strong> Use <span class="kbd">Cmd+Shift+H</span> to quickly hide/show the app while working in Chrome. The hotkeys work globally — no need to switch windows.
+    </div>
+
+    <!-- 9 -->
+    <h2 id="g9">9. Custom Prompts</h2>
+    <p>Prompts control how the AI analyzes your problem. The app comes with built-in prompts:</p>
+    <ul>
+        <li><strong>Algorithm - Optimal</strong> — Finds the most efficient solution</li>
+        <li><strong>Algorithm - Beginner</strong> — Explains in simpler terms</li>
+        <li><strong>System Design</strong> — For system design questions</li>
+        <li><strong>Code Review</strong> — Reviews and improves existing code</li>
+        <li><strong>Explain Concept</strong> — Explains algorithms and concepts</li>
+        <li><strong>Verbal Interview</strong> — For audio-based interview practice</li>
+    </ul>
+
+    <h3>Editing a Prompt</h3>
+    <p>Go to <strong>Settings → Prompts</strong> and click <strong>"Edit"</strong> on any prompt. You can customize the system instructions and user template. Use <code>{CONTENT}</code> as a placeholder for the extracted text or problem content. Use <code>{LANGUAGE}</code> for the selected programming language.</p>
+
+    <h3>Creating a Custom Prompt</h3>
+    <p>Click <strong>"+ New Prompt"</strong> to create your own. You can have up to 3 custom prompts. After naming it, you'll be taken directly to the editor.</p>
+
+    <h3>Programming Language</h3>
+    <p>Select your preferred programming language in <strong>Settings → Prompts</strong>. The language is included in the prompt so the AI generates code in your chosen language (Java, Python, JavaScript, C++, Swift, Go, PHP, Ruby, SQL).</p>
+
+    <img src="img/prompts.png" alt="Prompts settings with language selection and built-in prompts" class="guide-screenshot" loading="lazy">
+
+    <!-- 10 -->
+    <h2 id="g10">10. Settings</h2>
+    <p>Click the <strong>gear icon</strong> in the header to open Settings. Tabs include:</p>
+    <ul>
+        <li><strong>Account</strong> — View your subscription status, usage quota, manage billing, or sign out.</li>
+        <li><strong>AI Models</strong> — Choose which AI model to use. Free users can enter their own API key here.</li>
+        <li><strong>Input Mode</strong> — Switch between Text Extraction and Screenshot Capture as the default mode.</li>
+        <li><strong>Prompts</strong> — Select, edit, create, and manage prompts. Choose your programming language.</li>
+        <li><strong>HotKeys</strong> — Customize all keyboard shortcuts.</li>
+    </ul>
+
+    <img src="img/ai-models.png" alt="AI Models settings showing premium model selection" class="guide-screenshot" loading="lazy">
+
+    <!-- 11 -->
+    <h2 id="g11">11. Free vs Pro</h2>
+
+    <table class="data-table">
+        <tr>
+            <th>Feature</th>
+            <th>Free</th>
+            <th>Pro</th>
+        </tr>
+        <tr>
+            <td>AI calls</td>
+            <td>3 calls (or unlimited with your own API key)</td>
+            <td>Monthly quota included</td>
+        </tr>
+        <tr>
+            <td>AI models</td>
+            <td>1 model (or your own via API key)</td>
+            <td>All premium models</td>
+        </tr>
+        <tr>
+            <td>Input sources</td>
+            <td>Chrome tabs only</td>
+            <td>Chrome tabs, Display, Audio</td>
+        </tr>
+        <tr>
+            <td>Websites</td>
+            <td>Coding practice sites only</td>
+            <td>Any website</td>
+        </tr>
+        <tr>
+            <td>Text Extraction</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Screenshot Capture</td>
+            <td>&#10003; (Chrome tabs)</td>
+            <td>&#10003; (Chrome tabs + Display)</td>
+        </tr>
+        <tr>
+            <td>Audio Recording</td>
+            <td>&#10007;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Custom Prompts</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Global Hotkeys</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Always on Top</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Stealth Mode</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+    </table>
+
+    <p>To upgrade, go to <strong>Settings → Account</strong> and click <strong>"Upgrade to Pro"</strong>.</p>
+
+    <!-- 12 -->
+    <h2 id="g12">12. Using Your Own API Key (Free Users)</h2>
+    <p>Free users can bring their own API key to get unlimited AI calls:</p>
+    <div class="step">
+        <span class="step-number">1</span> Go to <strong>Settings → AI Models</strong>.
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> Enter your API key in the provided field.
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> Click <strong>Save</strong>. The app will use your key for all AI requests.
+    </div>
+    <div class="warning">
+        <strong>Note:</strong> Your API key is stored locally on your device only. We never send it to our servers. You are responsible for any charges from the API provider.
+    </div>
+
+    <!-- 13 -->
+    <h2 id="g13">13. Troubleshooting</h2>
+
+    <h3>"Open Chrome" button doesn't connect</h3>
+    <ul>
+        <li>Make sure <strong>Google Chrome is installed</strong> on your computer. The app requires Chrome to function.</li>
+        <li>Make sure no other application is using debugging port 9222.</li>
+        <li>Try closing all Chrome windows and clicking "Open Chrome" again.</li>
+    </ul>
+
+    <h3>Screenshot or audio capture not working (macOS)</h3>
+    <ul>
+        <li>Go to <strong>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</strong> and enable CrackingInterview.</li>
+        <li>You may need to restart the app after granting this permission.</li>
+        <li>This permission is required for screenshot capture, display capture, and audio recording.</li>
+    </ul>
+
+    <h3>Input Source dropdown is empty</h3>
+    <ul>
+        <li>Click the <strong>refresh button</strong> next to the dropdown.</li>
+        <li>Make sure Chrome is connected (header shows "Chrome Ready").</li>
+        <li>Open at least one tab in the Chrome window.</li>
+    </ul>
+
+    <h3>AI response is slow or fails</h3>
+    <ul>
+        <li>Check your internet connection.</li>
+        <li>If using your own API key, verify it's valid and has available quota.</li>
+        <li>Try selecting a different AI model in Settings → AI Models.</li>
+        <li>Some complex problems may take longer — the app has a 30-second timeout.</li>
+    </ul>
+
+    <h3>"Domain not allowed" error (Free users)</h3>
+    <ul>
+        <li>Free tier is limited to supported coding practice websites.</li>
+        <li>Navigate to a supported site in the Chrome window.</li>
+        <li>Upgrade to Pro for access to any website.</li>
+    </ul>
+
+    <h3>Audio recording doesn't work</h3>
+    <ul>
+        <li>Audio is a Pro-only feature. Make sure you have an active Pro subscription.</li>
+        <li>On macOS, grant <strong>Screen &amp; System Audio Recording</strong> permission in System Settings → Privacy &amp; Security (required for system audio capture).</li>
+        <li>Make sure system audio is playing (the app records what your computer outputs).</li>
+    </ul>
+
+    <h3>Hotkeys don't work</h3>
+    <ul>
+        <li>On macOS, go to <strong>System Settings → Privacy &amp; Security → Accessibility</strong> and enable CrackingInterview. This is required for global hotkeys.</li>
+        <li>You may need to restart the app after granting this permission.</li>
+        <li>Make sure the app is running (hotkeys work even when the window is hidden, thanks to stealth mode).</li>
+        <li>Check for conflicts with other apps using the same shortcuts.</li>
+    </ul>
+
+    <hr>
+
+    <p style="text-align: center; color: #6b7280; font-size: 0.95em;">
+        Still need help? Contact us at <a href="mailto:support@crackinginterview.org">support@crackinginterview.org</a>
+    </p>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="guide.html">User Guide</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:support@crackinginterview.org">Contact</a>
+    </div>
+    <p class="copyright">&copy; 2026 CrackingInterview. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
