@@ -54,7 +54,7 @@
         }
         .hero-image {
             margin-top: 60px;
-            max-width: 520px;
+            max-width: 480px;
             width: 100%;
             border-radius: 16px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06);
@@ -106,8 +106,51 @@
             box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.05);
         }
 
+        /* ── USE CASES ── */
+        .use-cases-section {
+            background: rgba(255,255,255,0.015);
+        }
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .use-case-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .use-case-card:hover {
+            border-color: rgba(96,165,250,0.3);
+            transform: translateY(-4px);
+        }
+        .use-case-card img {
+            width: 100%;
+            display: block;
+        }
+        .use-case-body {
+            padding: 20px 22px 24px;
+        }
+        .use-case-tag {
+            display: inline-block;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .use-case-tag.algo { background: rgba(52,211,153,0.12); color: #34d399; }
+        .use-case-tag.design { background: rgba(139,92,246,0.12); color: #a78bfa; }
+        .use-case-tag.audio { background: rgba(251,191,36,0.12); color: #fbbf24; }
+        .use-case-body h3 { font-size: 1.15em; color: #fff; margin-bottom: 8px; }
+        .use-case-body p { font-size: 0.92em; color: #9ca3af; line-height: 1.55; }
+
         /* ── FEATURES ── */
-        .features-section { background: rgba(255,255,255,0.015); }
+        .features-section { }
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -181,10 +224,14 @@
             .step-row { grid-template-columns: 1fr; gap: 30px; }
             .step-row.reverse .step-text { order: 1; }
             .step-row.reverse .step-img { order: 2; }
+            .use-cases-grid { grid-template-columns: 1fr !important; }
             .features-grid { grid-template-columns: 1fr !important; }
             .plans-grid { grid-template-columns: 1fr; }
             .hero { padding: 100px 20px 60px; }
             section { padding: 60px 20px; }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -210,7 +257,7 @@
         Your <span class="highlight">AI-Powered</span> Technical Assistant for Interviews
     </h1>
     <p class="subtitle">
-        Real-time AI solutions for coding interviews. Extract problems, capture screenshots, record audio — and get instant, expert-level explanations and code.
+        Real-time AI solutions for coding, system design, and verbal interviews. Extract problems, capture screenshots, record audio — get instant, expert-level answers.
     </p>
     <p class="platforms">Available on macOS and Windows</p>
 
@@ -225,7 +272,7 @@
         </a>
     </div>
 
-    <img src="img/solution.png" alt="CrackingInterview — AI solution with syntax-highlighted code" class="hero-image" loading="lazy">
+    <img src="img/algorithm-explanation.png" alt="CrackingInterview — AI explanation and code solution for a LeetCode problem" class="hero-image" loading="lazy">
 </section>
 
 <!-- HOW IT WORKS -->
@@ -239,10 +286,10 @@
                 <div class="step-text">
                     <div class="step-num-circle">1</div>
                     <h3>Select Your Input Source</h3>
-                    <p>Click <strong>Open Chrome</strong> in the header and navigate to any coding problem. The app lists all your Chrome tabs with live thumbnails. Select one — or pick a Display for screen capture, or Audio for verbal interviews.</p>
+                    <p>Click <strong>Open Chrome</strong> in the header and navigate to any problem. The app lists all your Chrome tabs with live thumbnails — or pick a Display for screen capture, or Audio for verbal interviews.</p>
                 </div>
                 <div class="step-img">
-                    <img src="img/dropdown.png" alt="Input source dropdown with Chrome tabs and displays" loading="lazy">
+                    <img src="img/input-source.png" alt="Input source dropdown showing Chrome tabs, displays, and audio" loading="lazy">
                 </div>
             </div>
 
@@ -250,10 +297,10 @@
                 <div class="step-text">
                     <div class="step-num-circle">2</div>
                     <h3>Hit Solve</h3>
-                    <p>Press <strong>Solve</strong> or use a global hotkey. The app extracts the problem text (or takes a screenshot) and sends it to a premium AI model. A live progress stepper keeps you updated.</p>
+                    <p>Press <strong>Solve</strong> or use a global hotkey. The app extracts the problem (text or screenshot) and sends it to a premium AI model. A live progress stepper shows the model and prompt being used.</p>
                 </div>
                 <div class="step-img">
-                    <img src="img/stepper.png" alt="Progress stepper showing Extract and Asking AI steps" loading="lazy">
+                    <img src="img/algorithm-stepper.png" alt="Progress stepper showing Extract and Asking AI steps with model info" loading="lazy">
                 </div>
             </div>
 
@@ -261,10 +308,45 @@
                 <div class="step-text">
                     <div class="step-num-circle">3</div>
                     <h3>Get Your Answer</h3>
-                    <p>Within seconds, you receive a detailed <strong>Explanation</strong> with the approach, complexity analysis, and a walkthrough — plus a complete <strong>Solution</strong> with syntax-highlighted code you can copy with one click.</p>
+                    <p>Within seconds you get a concise <strong>Explanation</strong> with the approach and complexity analysis, plus a complete <strong>Solution</strong> with syntax-highlighted, copy-ready code.</p>
                 </div>
                 <div class="step-img">
-                    <img src="img/explanation.png" alt="AI explanation with approach, complexity, and walkthrough" loading="lazy">
+                    <img src="img/algorithm-solution.png" alt="AI solution with syntax-highlighted Java code and Copy Code button" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- USE CASES -->
+<section id="use-cases" class="use-cases-section">
+    <div class="section-inner">
+        <h2 class="section-title">Built for Every Interview Type</h2>
+        <p class="section-subtitle">From algorithm puzzles to system design and live verbal interviews.</p>
+
+        <div class="use-cases-grid">
+            <div class="use-case-card">
+                <img src="img/algorithm-explanation.png" alt="Algorithm problem — AI explanation and solution code" loading="lazy">
+                <div class="use-case-body">
+                    <span class="use-case-tag algo">Algorithm</span>
+                    <h3>Coding Problems</h3>
+                    <p>Extract text or capture a screenshot from LeetCode, HackerRank, or any site. Get optimal solutions with step-by-step explanations.</p>
+                </div>
+            </div>
+            <div class="use-case-card">
+                <img src="img/system-design-architecture.png" alt="System design — architecture diagram with Mermaid rendering" loading="lazy">
+                <div class="use-case-body">
+                    <span class="use-case-tag design">System Design</span>
+                    <h3>Architecture &amp; Diagrams</h3>
+                    <p>Get full system designs with rendered architecture diagrams, ER models, sequence flows, and scaling strategies.</p>
+                </div>
+            </div>
+            <div class="use-case-card">
+                <img src="img/audio-recording.png" alt="Audio recording — system audio capture for verbal interviews" loading="lazy">
+                <div class="use-case-body">
+                    <span class="use-case-tag audio">Verbal Interview</span>
+                    <h3>Audio Recording</h3>
+                    <p>Record system audio from Zoom or Teams calls. AI transcribes and responds with a structured answer in real time.</p>
                 </div>
             </div>
         </div>
@@ -272,7 +354,7 @@
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="features-section">
+<section id="features">
     <div class="section-inner">
         <h2 class="section-title">Features</h2>
         <p class="section-subtitle">Everything you need for technical interview preparation.</p>
@@ -281,12 +363,22 @@
             <div class="feature-card">
                 <div class="feature-icon">🔒</div>
                 <h3>Stealth Mode</h3>
-                <p>Invisible to screen-sharing apps like Zoom and Teams. Hidden from screenshots, Dock (macOS), and Taskbar (Windows).</p>
+                <p>Invisible to screen-sharing apps like Zoom and Teams. Hidden from screenshots, Dock, and Taskbar.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📌</div>
                 <h3>Always on Top</h3>
-                <p>The app window stays above all other windows so you always have your AI assistant visible while you work.</p>
+                <p>The app window stays above all other windows so your AI assistant is always visible while you work.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Premium AI Models</h3>
+                <p>Choose from GPT-5.2 Codex, Claude Sonnet 4.5, Gemini 3 Flash, and Grok 4.1 Fast.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⌨️</div>
+                <h3>Global Hotkeys</h3>
+                <p>Fully customizable keyboard shortcuts that work even when the app is in the background.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📝</div>
@@ -296,27 +388,17 @@
             <div class="feature-card">
                 <div class="feature-icon">📸</div>
                 <h3>Screenshot Capture</h3>
-                <p>Capture browser tabs or your entire screen. Perfect for problems with images, diagrams, or complex layouts.</p>
+                <p>Capture browser tabs or your entire screen. Perfect for problems with images, diagrams, or tables.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🎙️</div>
                 <h3>Audio Recording</h3>
-                <p>Record system audio and microphone for verbal interview practice. AI transcribes and responds in real time.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3>Premium AI Models</h3>
-                <p>Choose from multiple state-of-the-art AI models. Every response is tailored to your selected language and prompt.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⌨️</div>
-                <h3>Global Hotkeys</h3>
-                <p>Fully customizable keyboard shortcuts that work even when the app is in the background. Never leave your workflow.</p>
+                <p>Record system audio for verbal interview practice. AI transcribes and responds in real time.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📋</div>
                 <h3>Custom Prompts</h3>
-                <p>Built-in prompts for algorithms, system design, code review, and more — or create your own tailored prompts.</p>
+                <p>Built-in prompts for algorithms, system design, code review — or create your own tailored prompts.</p>
             </div>
         </div>
     </div>
@@ -337,7 +419,7 @@
             <div class="feature-card">
                 <div class="feature-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="#b0b0b0"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></div>
                 <h3>macOS Permissions</h3>
-                <p>Grant <strong>Accessibility</strong> (for hotkeys) and <strong>Screen &amp; System Audio Recording</strong> (for capture and audio) in System Settings → Privacy &amp; Security.</p>
+                <p>Grant <strong>Accessibility</strong> (hotkeys) and <strong>Screen &amp; System Audio Recording</strong> (capture) in System Settings.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="#00adef"><path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22l-10-1.91V13.1l10 .15z"/></svg></div>
@@ -386,7 +468,7 @@
 <!-- NOTICE -->
 <div class="notice-section">
     <div class="notice-box">
-        <h3>⚠️ User Responsibility</h3>
+        <h3>User Responsibility</h3>
         <p>
             CrackingInterview is a productivity tool. <strong>You are solely responsible for how you use this application</strong> and for ensuring your use complies with all applicable laws, regulations, and policies. See our <a href="terms.html">Terms of Service</a>.
         </p>
