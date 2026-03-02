@@ -297,6 +297,9 @@
         <img src="img/app-icon.png" alt="CrackingInterview">
         Cracking<span>Interview</span>
     </a>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
     <div class="nav-links">
         <a href="#how-it-works">How It Works</a>
         <a href="#use-cases">Use Cases</a>
@@ -305,6 +308,13 @@
         <a href="guide.html">Guide</a>
     </div>
 </nav>
+<script>
+(function(){
+    var btn=document.querySelector('.nav-hamburger'),links=document.querySelector('.nav-links');
+    btn.addEventListener('click',function(){btn.classList.toggle('active');links.classList.toggle('open');});
+    links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){btn.classList.remove('active');links.classList.remove('open');});});
+})();
+</script>
 
 <!-- HERO -->
 <section class="hero">

@@ -60,12 +60,22 @@
         <img src="img/app-icon.png" alt="CrackingInterview">
         Cracking<span>Interview</span>
     </a>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
     <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
     </div>
 </nav>
+<script>
+(function(){
+    var btn=document.querySelector('.nav-hamburger'),links=document.querySelector('.nav-links');
+    btn.addEventListener('click',function(){btn.classList.toggle('active');links.classList.toggle('open');});
+    links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){btn.classList.remove('active');links.classList.remove('open');});});
+})();
+</script>
 
 <div class="page-container">
     <h1>User Guide</h1>
