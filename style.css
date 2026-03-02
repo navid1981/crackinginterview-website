@@ -97,11 +97,13 @@ footer {
 }
 .btn-primary:hover { box-shadow: 0 6px 30px rgba(59,130,246,0.45); }
 .btn-secondary {
-    background: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.08);
     color: #e0e0e0;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-sizing: border-box;
 }
-.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+.btn-primary { box-sizing: border-box; border: 1px solid transparent; }
+.btn-secondary:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.28); }
 .btn-icon { width: 18px; height: 18px; }
 
 /* ── PAGE CONTENT (legal / guide) ── */
