@@ -13,45 +13,12 @@
     <meta property="og:title" content="User Guide - CrackingInterview">
     <meta property="og:description" content="Step-by-step guide to using CrackingInterview — setup, Chrome integration, AI solving, system design diagrams, audio recording, hotkeys, and custom prompts.">
     <meta property="og:url" content="https://crackinginterview.org/guide.html">
-    <meta property="og:image" content="https://crackinginterview.org/img/algorithm-explanation.png">
+    <meta property="og:image" content="https://crackinginterview.org/img/algorithm.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="User Guide - CrackingInterview">
     <meta name="twitter:description" content="Step-by-step guide to using CrackingInterview — setup, Chrome integration, AI solving, system design diagrams, audio recording, hotkeys, and custom prompts.">
-    <meta name="twitter:image" content="https://crackinginterview.org/img/algorithm-explanation.png">
+    <meta name="twitter:image" content="https://crackinginterview.org/img/algorithm.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .screenshot-pair {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-            margin: 18px auto;
-            max-width: 700px;
-        }
-        .screenshot-pair img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.05);
-        }
-        .screenshot-caption {
-            text-align: center;
-            color: #6b7280;
-            font-size: 0.85em;
-            margin-top: 6px;
-        }
-        .screenshot-single {
-            text-align: center;
-            margin: 18px auto;
-        }
-        .screenshot-single img {
-            max-width: 380px;
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.05);
-        }
-        @media (max-width: 600px) {
-            .screenshot-pair { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 <body>
 
@@ -65,6 +32,7 @@
     </button>
     <div class="nav-links">
         <a href="index.html">Home</a>
+        <a href="compare.html">Compare</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
     </div>
@@ -141,7 +109,7 @@
 
     <div class="info-box">
         <h3>Always on Top &amp; Stealth Mode</h3>
-        <p>The app window <strong>always stays on top</strong> of other windows so your AI assistant is always visible. It also runs in <strong>stealth mode</strong> — hidden from screen-sharing apps (Zoom, Teams), screenshots, Dock (macOS), and Taskbar (Windows).</p>
+        <p>The app window <strong>always stays on top</strong> of other windows so your AI assistant is always visible. It also supports <strong>stealth mode</strong> — hidden from screen-sharing apps (Zoom, Teams), screenshots, Dock (macOS), and Taskbar (Windows). Enable it in <strong>Settings → App</strong>.</p>
     </div>
 
     <div class="screenshot-pair">
@@ -167,8 +135,8 @@
     </ul>
 
     <div class="screenshot-single">
-        <img src="img/main-screen.png" alt="CrackingInterview main screen with Chrome Ready status" loading="lazy">
-        <p class="screenshot-caption">Main screen — Chrome Ready, input source selected</p>
+        <img src="img/main-chrome.png" alt="CrackingInterview main screen with Chrome Ready status and LeetCode tab" loading="lazy">
+        <p class="screenshot-caption">Main screen — Chrome Ready, LeetCode tab selected</p>
     </div>
 
     <div class="tip">
@@ -179,15 +147,15 @@
     <h2 id="g3">3. Selecting an Input Source</h2>
     <p>The Input Source dropdown shows all available sources:</p>
     <ul>
-        <li><strong>Chrome Tabs</strong> — Any open tab in the connected Chrome window (shows title + thumbnail)</li>
+        <li><strong>Chrome Tabs</strong> — Any open tab in the connected Chrome window (shows title + live thumbnail)</li>
         <li><strong>Displays</strong> — Your screen(s) for full-screen capture (Pro only)</li>
         <li><strong>Audio (System)</strong> — Record system audio and microphone (Pro only)</li>
     </ul>
     <p>Select the source you want to analyze, then click <strong>Solve</strong>.</p>
 
     <div class="screenshot-single">
-        <img src="img/input-source.png" alt="Input source dropdown showing Chrome tabs and displays" loading="lazy">
-        <p class="screenshot-caption">Input source dropdown — Chrome tabs, displays</p>
+        <img src="img/input-source.png" alt="Input source dropdown showing Chrome tabs and displays with thumbnails" loading="lazy">
+        <p class="screenshot-caption">Input source dropdown — Chrome tabs with thumbnails, displays</p>
     </div>
 
     <div class="tip">
@@ -201,7 +169,7 @@
         <span class="step-number">1</span> Select a <strong>Chrome tab</strong> from the Input Source dropdown.
     </div>
     <div class="step">
-        <span class="step-number">2</span> Make sure <strong>"Text Extraction"</strong> is selected in Settings → Input Mode.
+        <span class="step-number">2</span> Make sure <strong>"Text Extraction"</strong> is selected in Settings → AI Models → Input Mode.
     </div>
     <div class="step">
         <span class="step-number">3</span> Click <strong>Solve</strong> (or press <span class="kbd">Cmd+1</span>).
@@ -209,8 +177,8 @@
     <p>The progress stepper shows: <strong>Extract → Asking AI</strong>, along with the AI model and prompt being used. Once complete, the explanation and solution appear.</p>
 
     <div class="screenshot-single">
-        <img src="img/algorithm-stepper.png" alt="Progress stepper showing Extract → Asking AI with GPT-5.2 Codex model" loading="lazy">
-        <p class="screenshot-caption">Progress stepper — shows model and prompt</p>
+        <img src="img/algorithm-stepper.png" alt="Progress stepper showing Extract → Asking AI with Gemini 3 Flash model" loading="lazy">
+        <p class="screenshot-caption">Progress stepper — shows model (Gemini 3 Flash) and prompt (Algorithm - Optimal)</p>
     </div>
 
     <!-- 5 -->
@@ -220,15 +188,15 @@
         <span class="step-number">1</span> Select your input source (Chrome tab or Display).
     </div>
     <div class="step">
-        <span class="step-number">2</span> Select <strong>"Screenshot Capture"</strong> in Settings → Input Mode — or press <span class="kbd">Cmd+2</span>.
+        <span class="step-number">2</span> Select <strong>"Screenshot Capture"</strong> in Settings → AI Models → Input Mode — or press <span class="kbd">Cmd+2</span>.
     </div>
     <div class="step">
         <span class="step-number">3</span> Click <strong>Solve</strong> (or press <span class="kbd">Cmd+2</span>).
     </div>
 
     <div class="screenshot-single">
-        <img src="img/input-mode.png" alt="Input Mode settings — Text Extraction and Screenshot Capture toggle" loading="lazy">
-        <p class="screenshot-caption">Settings → Input Mode</p>
+        <img src="img/setting-ai-models.png" alt="AI Models settings showing Input Mode — Text Extraction and Screenshot Capture toggle" loading="lazy">
+        <p class="screenshot-caption">Settings → AI Models — Input Mode toggle</p>
     </div>
 
     <div class="tip">
@@ -237,7 +205,7 @@
 
     <!-- 6 -->
     <h2 id="g6">6. Solving — Audio Recording (Pro)</h2>
-    <p>Audio mode records system audio (e.g., from a Zoom or Teams call) and sends the recording to AI for analysis. Designed for verbal interview practice.</p>
+    <p>Audio mode records system audio (e.g., from a Zoom or Teams call) and sends the recording to AI for analysis. Designed for verbal interview practice. Supports <strong>20+ languages</strong> with auto-detection.</p>
     <div class="step">
         <span class="step-number">1</span> Select <strong>"Audio (System)"</strong> from the Input Source dropdown.
     </div>
@@ -245,28 +213,30 @@
         <span class="step-number">2</span> The app automatically selects the <strong>"Verbal Interview"</strong> prompt.
     </div>
     <div class="step">
-        <span class="step-number">3</span> Click <strong>Record</strong> (or press <span class="kbd">Cmd+3</span>) to start recording.
+        <span class="step-number">3</span> Choose your interview language (or leave on Auto-detect).
     </div>
     <div class="step">
-        <span class="step-number">4</span> The timer shows recording duration. Speak or let the audio play.
+        <span class="step-number">4</span> Click <strong>Record</strong> (or press <span class="kbd">Cmd+3</span>) to start recording.
     </div>
     <div class="step">
-        <span class="step-number">5</span> Click <strong>Stop</strong> (or press <span class="kbd">Cmd+3</span> again) to stop and send to AI.
+        <span class="step-number">5</span> The timer shows recording duration. Speak or let the audio play.
+    </div>
+    <div class="step">
+        <span class="step-number">6</span> Click <strong>Stop</strong> (or press <span class="kbd">Cmd+3</span> again) to stop and send to AI.
     </div>
 
-    <div class="screenshot-pair">
-        <div>
-            <img src="img/audio-recording.png" alt="Audio recording in progress with timer" loading="lazy">
-            <p class="screenshot-caption">Recording system audio (19s)</p>
-        </div>
-        <div>
-            <img src="img/audio-stepper.png" alt="Audio progress stepper — Record → Asking AI" loading="lazy">
-            <p class="screenshot-caption">Audio stepper — Record → Asking AI</p>
-        </div>
+    <div class="screenshot-single">
+        <img src="img/audio.gif" alt="Animated demo of audio recording — system audio capture, transcription, and AI response" class="guide-gif" loading="lazy">
+        <p class="screenshot-caption">Audio recording flow — record, transcribe, and get AI response</p>
+    </div>
+
+    <div class="screenshot-single">
+        <img src="img/audio-languages.png" alt="Audio language selection dropdown with 20+ languages including auto-detect" loading="lazy">
+        <p class="screenshot-caption">Interview language selection — 20+ languages supported</p>
     </div>
 
     <div class="warning">
-        <strong>Note:</strong> Audio recording has a 3-minute maximum. The recording automatically stops and sends to AI after 3 minutes. Audio is a <strong>Pro-only</strong> feature.
+        <strong>Note:</strong> Audio recording has a 3-minute maximum per session. The recording automatically stops and sends to AI after 3 minutes. Audio is a <strong>Pro-only</strong> feature with up to 10 hours per month.
     </div>
 
     <!-- 7 -->
@@ -278,15 +248,9 @@
     </ul>
     <p>Both sections can be closed with the ✕ button. They automatically reappear when you run a new Solve.</p>
 
-    <div class="screenshot-pair">
-        <div>
-            <img src="img/algorithm-explanation.png" alt="AI explanation with approach and complexity analysis" loading="lazy">
-            <p class="screenshot-caption">Explanation + Solution start</p>
-        </div>
-        <div>
-            <img src="img/algorithm-solution.png" alt="Full code solution with syntax highlighting" loading="lazy">
-            <p class="screenshot-caption">Full solution code (scrolled)</p>
-        </div>
+    <div class="screenshot-single">
+        <img src="img/algorithm.png" alt="AI explanation with approach, complexity analysis, and syntax-highlighted code solution" loading="lazy">
+        <p class="screenshot-caption">Explanation + Solution with syntax-highlighted code and Copy Code button</p>
     </div>
 
     <!-- 8 -->
@@ -299,29 +263,8 @@
     </ul>
 
     <div class="screenshot-single">
-        <img src="img/system-design-stepper.png" alt="System design stepper — Screenshot → Asking AI with Gemini 3 Flash" loading="lazy">
-        <p class="screenshot-caption">Screenshot → Asking AI (System Design prompt)</p>
-    </div>
-
-    <div class="screenshot-single">
-        <img src="img/system-design-explanation.png" alt="System design explanation — functional and non-functional requirements" loading="lazy">
-        <p class="screenshot-caption">Requirements analysis (Explanation)</p>
-    </div>
-
-    <div class="screenshot-pair">
-        <div>
-            <img src="img/system-design-architecture.png" alt="System design — rendered architecture diagram" loading="lazy">
-            <p class="screenshot-caption">Architecture diagram</p>
-        </div>
-        <div>
-            <img src="img/system-design-data-model.png" alt="System design — ER data model diagram" loading="lazy">
-            <p class="screenshot-caption">ER data model</p>
-        </div>
-    </div>
-
-    <div class="screenshot-single">
-        <img src="img/system-design-sequence.png" alt="System design — API sequence flow and scaling strategy" loading="lazy">
-        <p class="screenshot-caption">Sequence flow + Scaling strategy</p>
+        <img src="img/system-design.gif" alt="Animated demo of system design — architecture diagrams, ER models, and sequence flows rendered in real time" class="guide-gif" loading="lazy">
+        <p class="screenshot-caption">System design flow — architecture, ER model, sequence diagram, and scaling strategy</p>
     </div>
 
     <!-- 9 -->
@@ -366,7 +309,7 @@
     <p>All hotkeys are customizable in <strong>Settings → HotKeys</strong>. On Windows, <span class="kbd">Cmd</span> is replaced with <span class="kbd">Alt</span>.</p>
 
     <div class="screenshot-single">
-        <img src="img/hotkeys.png" alt="HotKeys settings — Solve, Navigation, and App sections" loading="lazy">
+        <img src="img/settings-hotkeys.png" alt="HotKeys settings — Solve, Navigation, and App sections with customizable shortcuts" loading="lazy">
         <p class="screenshot-caption">Settings → HotKeys</p>
     </div>
 
@@ -397,12 +340,12 @@
 
     <div class="screenshot-pair">
         <div>
-            <img src="img/prompts.png" alt="Prompts settings with language selection and built-in prompts" loading="lazy">
+            <img src="img/setting-prompts.png" alt="Prompts settings with programming language selection and 6 built-in prompts" loading="lazy">
             <p class="screenshot-caption">Settings → Prompts</p>
         </div>
         <div>
-            <img src="img/edit-prompt.png" alt="Prompt editor with system and user prompt fields" loading="lazy">
-            <p class="screenshot-caption">Editing a prompt</p>
+            <img src="img/setting-edit-prompt.png" alt="Prompt editor with system prompt and user prompt fields" loading="lazy">
+            <p class="screenshot-caption">Editing a prompt — System &amp; User Prompt</p>
         </div>
     </div>
 
@@ -410,21 +353,25 @@
     <h2 id="g11">11. Settings</h2>
     <p>Click the <strong>gear icon</strong> in the header to open Settings. Tabs include:</p>
     <ul>
-        <li><strong>Account</strong> — Subscription status, usage quota, manage billing, sign out</li>
-        <li><strong>AI Models</strong> — Choose which AI model to use. Free users can enter their own API key</li>
-        <li><strong>Input Mode</strong> — Switch between Text Extraction and Screenshot Capture</li>
+        <li><strong>Account</strong> — Subscription status, AI call and audio usage quotas, manage billing, sign out</li>
+        <li><strong>AI Models</strong> — Choose which AI model to use (Gemini 3 Flash, GPT-5, Claude Sonnet, Grok). Switch between Text Extraction and Screenshot Capture input modes. Free users can enter their own API key</li>
         <li><strong>Prompts</strong> — Select, edit, create, and manage prompts. Choose your programming language</li>
         <li><strong>HotKeys</strong> — Customize all keyboard shortcuts</li>
+        <li><strong>App</strong> — Adjust window transparency, switch between Light/Dark theme, and toggle Stealth Mode</li>
     </ul>
 
-    <div class="screenshot-pair">
+    <div class="screenshot-triple">
         <div>
-            <img src="img/ai-models.png" alt="AI Models settings showing premium model selection" loading="lazy">
-            <p class="screenshot-caption">Settings → AI Models</p>
+            <img src="img/setting-ai-models.png" alt="AI Models settings showing premium model selection and input mode" loading="lazy">
+            <p class="screenshot-caption">AI Models</p>
         </div>
         <div>
-            <img src="img/account.png" alt="Account settings showing Pro subscription status and usage" loading="lazy">
-            <p class="screenshot-caption">Settings → Account</p>
+            <img src="img/setting-account.png" alt="Account settings showing Pro subscription status, usage quotas" loading="lazy">
+            <p class="screenshot-caption">Account</p>
+        </div>
+        <div>
+            <img src="img/setting-app.png" alt="App settings — transparency slider, theme toggle, stealth mode" loading="lazy">
+            <p class="screenshot-caption">App Settings</p>
         </div>
     </div>
 
@@ -435,17 +382,22 @@
         <tr>
             <th>Feature</th>
             <th>Free</th>
-            <th>Pro</th>
+            <th>Pro ($15/mo)</th>
         </tr>
         <tr>
             <td>AI calls</td>
             <td>3 calls (or unlimited with your own API key)</td>
-            <td>Monthly quota included</td>
+            <td>150 calls per month</td>
         </tr>
         <tr>
             <td>AI models</td>
             <td>1 model (or your own via API key)</td>
-            <td>All premium models</td>
+            <td>All 4 premium models</td>
+        </tr>
+        <tr>
+            <td>Audio recording</td>
+            <td>&#10007;</td>
+            <td>10 hours per month</td>
         </tr>
         <tr>
             <td>Input sources</td>
@@ -466,11 +418,6 @@
             <td>Screenshot Capture</td>
             <td>&#10003; (Chrome tabs)</td>
             <td>&#10003; (Chrome tabs + Display)</td>
-        </tr>
-        <tr>
-            <td>Audio Recording</td>
-            <td>&#10007;</td>
-            <td>&#10003;</td>
         </tr>
         <tr>
             <td>System Design Diagrams</td>
@@ -497,9 +444,19 @@
             <td>&#10003;</td>
             <td>&#10003;</td>
         </tr>
+        <tr>
+            <td>Light / Dark Theme</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Window Transparency</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
     </table>
 
-    <p>To upgrade, go to <strong>Settings → Account</strong> and click <strong>"Upgrade to Pro"</strong>.</p>
+    <p>To upgrade, go to <strong>Settings → Account</strong> and click <strong>"Manage Subscription"</strong>. See <a href="compare.html">how we compare</a> to other AI interview tools.</p>
 
     <!-- 13 -->
     <h2 id="g13">13. Using Your Own API Key (Free Users)</h2>
@@ -531,6 +488,7 @@
     <ul>
         <li>Go to <strong>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</strong> and enable CrackingInterview.</li>
         <li>You may need to restart the app after granting this permission.</li>
+        <li>If it still doesn't work, try toggling the permission off and back on.</li>
     </ul>
 
     <h3>Input Source dropdown is empty</h3>
@@ -560,6 +518,7 @@
         <li>Audio is a Pro-only feature. Make sure you have an active Pro subscription.</li>
         <li>On macOS, grant <strong>Screen &amp; System Audio Recording</strong> permission in System Settings.</li>
         <li>Make sure system audio is playing (the app records what your computer outputs).</li>
+        <li>If audio worked once but stopped, try toggling the Screen Recording permission off and back on in System Settings.</li>
     </ul>
 
     <h3>Hotkeys don't work</h3>
@@ -580,6 +539,7 @@
     <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="guide.html">User Guide</a>
+        <a href="compare.html">Compare</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
         <a href="mailto:support@crackinginterview.org">Contact</a>
