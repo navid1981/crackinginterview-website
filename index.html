@@ -147,7 +147,7 @@
                 <div class="step-text">
                     <div class="step-num-circle">1</div>
                     <h3>Connect Chrome</h3>
-                    <p>Click <strong>Open Chrome</strong> in the header. The app launches a Chrome window connected via DevTools Protocol — your existing sessions stay untouched. The header shows <strong>"Chrome Ready"</strong> when connected.</p>
+                    <p>Click <strong>Open Chrome</strong> in the header. The app launches a Chrome window connected via DevTools Protocol — your existing sessions stay untouched. Or <a href="guide.html#g2">connect to your existing Chrome</a> with remote debugging enabled (Chrome 144+). The header shows <strong>"Chrome Ready"</strong> when connected.</p>
                 </div>
                 <div class="step-img">
                     <img src="img/main-chrome.png" alt="Main screen with Chrome Ready status and LeetCode tab selected" loading="lazy">
@@ -201,10 +201,10 @@
                 </div>
             </div>
             <div class="showcase-card">
-                <img src="img/setting-prompts.png" alt="Prompts settings with 6 built-in prompts and language selection" loading="lazy">
+                <img src="img/setting-prompts.png" alt="Prompts settings with 6 built-in prompts, language selection, and Upload Docs button" loading="lazy">
                 <div class="showcase-card-body">
-                    <h3>Custom Prompts</h3>
-                    <p>6 built-in prompts for algorithms, system design, code review, and more. Edit system and user prompts, or create your own.</p>
+                    <h3>Custom Prompts &amp; Document Upload</h3>
+                    <p>6 built-in prompts for algorithms, system design, code review, and more. Edit system and user prompts, create your own, or upload documents (resume, cover letter) as reusable placeholders.</p>
                 </div>
             </div>
             <div class="showcase-card">
@@ -288,6 +288,13 @@
             </div>
             <div class="highlight-card">
                 <div class="highlight-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg>
+                </div>
+                <h3>Document Upload</h3>
+                <p>Upload your resume, cover letter, or any document. Use <code>{PLACEHOLDER}</code> in prompts to inject document content as AI context.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
                 </div>
                 <h3>Bring Your Own Key</h3>
@@ -311,6 +318,7 @@
                     <li>Chrome tab input (coding practice sites)</li>
                     <li>Text extraction and screenshot</li>
                     <li>Custom prompts and hotkeys</li>
+                    <li>Document upload placeholders</li>
                 </ul>
             </div>
             <div class="plan-card pro">

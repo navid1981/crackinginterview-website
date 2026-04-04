@@ -143,6 +143,24 @@
         <strong>Tip:</strong> After Chrome opens and loads a page, click the <strong>refresh button</strong> next to the Input Source dropdown to update the list of available tabs.
     </div>
 
+    <h3>Connect to Your Existing Chrome (Chrome 144+)</h3>
+    <p>If you have <strong>Chrome 144 or later</strong>, you can connect CrackingInterview to your existing Chrome window instead of opening a new one:</p>
+    <div class="step">
+        <span class="step-number">1</span> In Chrome, go to <code>chrome://inspect/#remote-debugging</code>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> Check <strong>"Allow remote debugging for this browser instance"</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> Click <strong>"Open Chrome"</strong> in CrackingInterview — it will automatically detect and connect to your running Chrome.
+    </div>
+    <p>This lets you use your existing tabs, bookmarks, and logged-in sessions directly with CrackingInterview.</p>
+
+    <div class="screenshot-single">
+        <img src="img/chrome-remote-debugging.png" alt="Chrome remote debugging settings at chrome://inspect showing Allow remote debugging checkbox" loading="lazy">
+        <p class="screenshot-caption">Chrome remote debugging — enable at chrome://inspect/#remote-debugging</p>
+    </div>
+
     <!-- 3 -->
     <h2 id="g3">3. Selecting an Input Source</h2>
     <p>The Input Source dropdown shows all available sources:</p>
@@ -333,14 +351,38 @@
     <p>Go to <strong>Settings → Prompts</strong> and click <strong>"Edit"</strong> on any prompt. You can customize the system instructions and user template. Use <code>{CONTENT}</code> as a placeholder for the extracted text and <code>{LANGUAGE}</code> for the programming language.</p>
 
     <h3>Creating a Custom Prompt</h3>
-    <p>Click <strong>"+ New Prompt"</strong> to create your own. You can have up to 3 custom prompts.</p>
+    <p>Click <strong>"New Prompt"</strong> to create your own. You can have up to 3 custom prompts.</p>
+
+    <h3>Document Placeholders</h3>
+    <p>Upload your documents (resume, cover letter, etc.) and use them as context in any prompt. Click <strong>"Upload Docs"</strong> in Settings → Prompts to open the Document Manager.</p>
+    <div class="step">
+        <span class="step-number">1</span> Click <strong>"Upload Docs"</strong> in the Prompts settings tab.
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> Upload up to <strong>3 files</strong> (PDF, DOCX, DOC, or TXT) and assign a name to each.
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> The app extracts the text and creates a <code>{PLACEHOLDER}</code> for each document.
+    </div>
+    <div class="step">
+        <span class="step-number">4</span> Use the placeholder (e.g. <code>{MY_RESUME}</code>) in any prompt template — the extracted text is automatically injected when you Solve.
+    </div>
+
+    <div class="warning">
+        <strong>Note:</strong> Reserved names like <code>{CONTENT}</code>, <code>{LANGUAGE}</code>, and <code>{INTERVIEW_LANGUAGE}</code> cannot be used as document placeholder names.
+    </div>
+
+    <div class="screenshot-single">
+        <img src="img/setting-upload-docs.png" alt="Document Placeholders dialog — upload documents and assign placeholder names for use in prompts" loading="lazy">
+        <p class="screenshot-caption">Upload Docs — upload documents and assign {PLACEHOLDER} names</p>
+    </div>
 
     <h3>Programming Language</h3>
     <p>Select your preferred language in <strong>Settings → Prompts</strong>. Available: Java, Python, JavaScript, C++, Swift, Go, PHP, Ruby, SQL.</p>
 
     <div class="screenshot-pair">
         <div>
-            <img src="img/setting-prompts.png" alt="Prompts settings with programming language selection and 6 built-in prompts" loading="lazy">
+            <img src="img/setting-prompts.png" alt="Prompts settings with programming language selection, 6 built-in prompts, New Prompt and Upload Docs buttons" loading="lazy">
             <p class="screenshot-caption">Settings → Prompts</p>
         </div>
         <div>
@@ -426,6 +468,11 @@
         </tr>
         <tr>
             <td>Custom Prompts</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+        </tr>
+        <tr>
+            <td>Document Placeholders</td>
             <td>&#10003;</td>
             <td>&#10003;</td>
         </tr>
