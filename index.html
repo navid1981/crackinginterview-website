@@ -456,8 +456,9 @@
 <!-- ANIMATED BACKGROUND + SCROLL REVEAL + ADVANCED EFFECTS -->
 <script>
 (function() {
+    // ── Particle Network Background ──
     var canvas = document.getElementById('bg-canvas');
-    if (!canvas) return;
+    if (canvas) {
     var ctx = canvas.getContext('2d');
     var particles = [];
     var mouse = { x: -1000, y: -1000 };
@@ -540,6 +541,7 @@
     draw();
     window.addEventListener('resize', function() { resize(); createParticles(); });
     document.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
+    } // end canvas
 
     // ── Scroll Reveal ──
     var reveals = document.querySelectorAll('.reveal');
