@@ -11,7 +11,7 @@
       gtag('js', new Date());
       gtag('config', 'AW-18084639735');
     </script>
-    <meta name="description" content="Compare CrackingInterview with Final Round AI, LockedIn AI, Interview Coder, and OphyAI. See which AI interview assistant offers the best features at the best price.">
+    <meta name="description" content="Compare CrackingInterview with Final Round AI, LockedIn AI, Interview Coder, and UltraCode. See which AI interview assistant offers the best features at the best price.">
     <title>Compare AI Interview Assistants — CrackingInterview</title>
     <link rel="canonical" href="https://crackinginterview.org/compare.html">
     <link rel="icon" type="image/png" href="img/app-icon.png">
@@ -19,16 +19,19 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="CrackingInterview">
     <meta property="og:title" content="Compare AI Interview Assistants — CrackingInterview">
-    <meta property="og:description" content="Feature-by-feature comparison of CrackingInterview vs Final Round AI, LockedIn AI, Interview Coder, and OphyAI. More features, better price.">
+    <meta property="og:description" content="Feature-by-feature comparison of CrackingInterview vs Final Round AI, LockedIn AI, Interview Coder, and UltraCode. More features, better price.">
     <meta property="og:url" content="https://crackinginterview.org/compare.html">
     <meta property="og:image" content="https://crackinginterview.org/img/algorithm.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Compare AI Interview Assistants — CrackingInterview">
-    <meta name="twitter:description" content="Feature-by-feature comparison of CrackingInterview vs Final Round AI, LockedIn AI, Interview Coder, and OphyAI.">
+    <meta name="twitter:description" content="Feature-by-feature comparison of CrackingInterview vs Final Round AI, LockedIn AI, Interview Coder, and UltraCode.">
     <meta name="twitter:image" content="https://crackinginterview.org/img/algorithm.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- ANIMATED BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
 
 <!-- NAV -->
 <nav>
@@ -42,7 +45,7 @@
     <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#plans">Plans</a>
+        <a href="index.html#plans">Pricing</a>
         <a href="guide.html">Guide</a>
     </div>
 </nav>
@@ -61,205 +64,271 @@
 </section>
 
 <!-- COMPARISON TABLE -->
-<section style="padding: 0 24px 80px;">
-    <div class="compare-table-wrapper">
-        <table class="compare-table">
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th class="col-ours">CrackingInterview</th>
-                    <th>Final Round AI</th>
-                    <th>LockedIn AI</th>
-                    <th>Interview Coder</th>
-                    <th>OphyAI</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Pricing -->
-                <tr class="row-category"><td colspan="6">Pricing</td></tr>
-                <tr>
-                    <td>Monthly Price</td>
-                    <td class="col-ours price-cell price-ours">$15/mo</td>
-                    <td class="price-cell price-other">$90/mo</td>
-                    <td class="price-cell price-other">$30–55/mo</td>
-                    <td class="price-cell price-other">$25/mo</td>
-                    <td class="price-cell price-other">$9–39/mo</td>
-                </tr>
-                <tr>
-                    <td>Annual Price</td>
-                    <td class="col-ours price-cell price-ours">$15/mo</td>
-                    <td class="price-cell price-other">$25/mo ($300/yr)</td>
-                    <td class="price-cell price-other">$30/mo ($360/yr)</td>
-                    <td class="price-cell price-other">$25/mo ($299/yr)</td>
-                    <td class="price-cell">$9–39/mo</td>
-                </tr>
-                <tr>
-                    <td>Free Tier</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> 3 calls + BYOK unlimited</td>
-                    <td><span class="check">&#10003;</span> Limited</td>
-                    <td><span class="check">&#10003;</span> Limited</td>
-                    <td><span class="check">&#10003;</span> Limited</td>
-                    <td><span class="check">&#10003;</span> 5 credits</td>
-                </tr>
-                <tr>
-                    <td>Bring Your Own API Key</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Unlimited calls</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
+<section class="cv2-section">
+  <div class="cv2-wrapper">
+    <div class="cv2-scroll">
+      <table class="cv2-table">
+        <thead>
+          <tr>
+            <th class="cv2-feat-col"></th>
+            <!-- CrackingInterview -->
+            <th class="cv2-th cv2-th-ours">
+              <div class="cv2-logo-wrap cv2-logo-ours">
+                <img src="img/app-icon.png" alt="CrackingInterview" class="cv2-logo-img"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="cv2-logo-fallback" style="display:none;background:linear-gradient(135deg,#3b82f6,#8b5cf6)">C</div>
+              </div>
+              <span class="cv2-prod-name cv2-prod-ours">CrackingInterview</span>
+              <span class="cv2-prod-badge">Our Pick</span>
+            </th>
+            <!-- Final Round AI -->
+            <th class="cv2-th cv2-th-comp">
+              <div class="cv2-logo-wrap">
+                <img src="https://www.finalroundai.com/favicon.ico" alt="Final Round AI" class="cv2-logo-img"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="cv2-logo-fallback" style="display:none;background:#1a1a2e">F</div>
+              </div>
+              <span class="cv2-prod-name">Final Round AI</span>
+            </th>
+            <!-- LockedIn AI -->
+            <th class="cv2-th cv2-th-comp">
+              <div class="cv2-logo-wrap">
+                <img src="https://www.lockedinai.com/favicon.ico" alt="LockedIn AI" class="cv2-logo-img"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="cv2-logo-fallback" style="display:none;background:#0f172a">L</div>
+              </div>
+              <span class="cv2-prod-name">LockedIn AI</span>
+            </th>
+            <!-- Interview Coder -->
+            <th class="cv2-th cv2-th-comp">
+              <div class="cv2-logo-wrap">
+                <img src="https://interviewcoder.co/favicon.ico" alt="Interview Coder" class="cv2-logo-img"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="cv2-logo-fallback" style="display:none;background:#18181b">I</div>
+              </div>
+              <span class="cv2-prod-name">Interview Coder</span>
+            </th>
+            <!-- UltraCode -->
+            <th class="cv2-th cv2-th-comp">
+              <div class="cv2-logo-wrap">
+                <img src="https://ultracode.ai/favicon.ico" alt="UltraCode" class="cv2-logo-img"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="cv2-logo-fallback" style="display:none;background:#1e1b4b">U</div>
+              </div>
+              <span class="cv2-prod-name">UltraCode</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
 
-                <!-- AI & Intelligence -->
-                <tr class="row-category"><td colspan="6">AI &amp; Intelligence</td></tr>
-                <tr>
-                    <td>Multiple Premium AI Models</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> GPT-5, Claude, Gemini, Grok</td>
-                    <td><span class="partial">Limited selection</span></td>
-                    <td><span class="check">&#10003;</span> OpenAI, Claude, Gemini</td>
-                    <td><span class="partial">Limited selection</span></td>
-                    <td><span class="partial">1–2 models</span></td>
-                </tr>
-                <tr>
-                    <td>Custom Prompts (System + User)</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Fully editable</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-                <tr>
-                    <td>System Design Diagrams</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Rendered Mermaid (architecture, ER, sequence)</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-                <tr>
-                    <td>Built-in Prompt Library</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> 6 prompts + custom</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-                <tr>
-                    <td>Document Upload (resume, etc.)</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> PDF, DOCX, TXT placeholders</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
+          <!-- ── PRICING ── -->
+          <tr class="cv2-section-row"><td colspan="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Pricing</td></tr>
 
-                <!-- Input Methods -->
-                <tr class="row-category"><td colspan="6">Input Methods</td></tr>
-                <tr>
-                    <td>Chrome Tab Text Extraction</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Direct text (accurate)</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-                <tr>
-                    <td>Screenshot Capture</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Tabs + full display</td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td>Audio / Verbal Interview</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> System audio, 20+ languages</td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="check">&#10003;</span> 7 languages</td>
-                </tr>
-                <tr>
-                    <td>Multi-Language Audio</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> 20+ languages</td>
-                    <td><span class="partial">English only</span></td>
-                    <td><span class="partial">Limited</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="check">&#10003;</span> 7 languages</td>
-                </tr>
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Monthly Price</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-price-good">$15/mo</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-bad">from $25/mo</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-bad">Credits-based</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-bad">$299/mo</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-neutral">No monthly plan</span></div></td>
+          </tr>
 
-                <!-- Stealth & UX -->
-                <tr class="row-category"><td colspan="6">Stealth &amp; User Experience</td></tr>
-                <tr>
-                    <td>Stealth Mode (invisible to screen share)</td>
-                    <td class="col-ours"><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td>Always on Top</td>
-                    <td class="col-ours"><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="partial">Browser overlay</span></td>
-                </tr>
-                <tr>
-                    <td>Global Hotkeys (customizable)</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Fully customizable</td>
-                    <td><span class="partial">Limited</span></td>
-                    <td><span class="partial">Limited</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-                <tr>
-                    <td>Light / Dark Theme</td>
-                    <td class="col-ours"><span class="check">&#10003;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-                <tr>
-                    <td>Window Transparency</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Adjustable slider</td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>Lifetime Price</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-price-good">—</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-text-muted">—</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-bad">Hidden</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-bad">$799</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-price-bad">$799</span></div></td>
+          </tr>
 
-                <!-- Technical -->
-                <tr class="row-category"><td colspan="6">Technical</td></tr>
-                <tr>
-                    <td>Native Desktop App</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> Tauri/Rust (~17 MB)</td>
-                    <td><span class="check">&#10003;</span> Electron (~200 MB+)</td>
-                    <td><span class="check">&#10003;</span> Electron (~200 MB+)</td>
-                    <td><span class="check">&#10003;</span> Electron (~200 MB+)</td>
-                    <td><span class="partial">Browser-based</span></td>
-                </tr>
-                <tr>
-                    <td>macOS + Windows</td>
-                    <td class="col-ours"><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td>Programming Language Selection</td>
-                    <td class="col-ours"><span class="check">&#10003;</span> 9 languages</td>
-                    <td><span class="partial">Auto-detect</span></td>
-                    <td><span class="partial">Auto-detect</span></td>
-                    <td><span class="check">&#10003;</span></td>
-                    <td><span class="cross">&#10007;</span></td>
-                </tr>
-            </tbody>
-        </table>
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>Free Tier</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">3 calls + BYOK</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">10-min trial</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Basic tools</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">App only, no AI</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">Trial (limits hidden)</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>Bring Your Own API Key</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Unlimited calls</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <!-- ── AI & INTELLIGENCE ── -->
+          <tr class="cv2-section-row"><td colspan="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg> AI &amp; Intelligence</td></tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Premium AI Models</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">GPT-5, Claude, Gemini, Grok</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">Gemini, Claude</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">GPT, Gemini, Claude, DeepSeek, Grok</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">Fine-tuned (unnamed)</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">O3, O4 Mini, GPT-5</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Custom Prompts</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Fully editable</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>System Design</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Rendered Mermaid diagrams</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Text only</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Text only</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Text only</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Built-in Prompt Library</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">6 prompts + custom</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg>Document Upload</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">PDF, DOCX, TXT</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Resume, JD, Q&amp;A</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <!-- ── INPUT METHODS ── -->
+          <tr class="cv2-section-row"><td colspan="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> Input Methods</td></tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>Chrome Tab Extraction</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Direct text (accurate)</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>Screenshot Capture</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Tabs + full display</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">macOS: tabs only</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>Audio / Verbal Interview</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">System audio, 20+ langs</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Multi-Language Audio</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">20+ languages</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">91 languages</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">50+ languages</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <!-- ── STEALTH & UX ── -->
+          <tr class="cv2-section-row"><td colspan="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg> Stealth &amp; User Experience</td></tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Stealth Mode</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">Pro plan only</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Always on Top</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01"/><rect x="4" y="12" width="8" height="4" rx="1"/></svg>Global Hotkeys</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Fully customizable</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>Light / Dark Theme</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>Window Transparency</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Adjustable slider</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+          </tr>
+
+          <!-- ── TECHNICAL ── -->
+          <tr class="cv2-section-row"><td colspan="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Technical</td></tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Native Desktop App</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Tauri/Rust (~17 MB)</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Desktop + mobile</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">Win 10+, macOS 13.1+</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>macOS + Windows</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span></div></td>
+          </tr>
+
+          <tr class="cv2-row">
+            <td class="cv2-feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Programming Languages</td>
+            <td class="cv2-cell cv2-cell-ours"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">9 languages</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-check">✓</span><span class="cv2-note">12 languages</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-cross">✗</span></div></td>
+            <td class="cv2-cell"><div class="cv2-cell-inner"><span class="cv2-partial">~</span><span class="cv2-note">All (auto)</span></div></td>
+          </tr>
+
+        </tbody>
+      </table>
     </div>
+  </div>
 </section>
 
 <!-- WHY CRACKINGINTERVIEW -->
@@ -322,7 +391,7 @@
 <div class="notice-section">
     <div class="notice-box">
         <h3>Disclaimer</h3>
-        <p>Competitor information was gathered from publicly available sources as of March 2026 and may not reflect the latest changes. All trademarks belong to their respective owners.</p>
+        <p>Competitor information was gathered from publicly available sources as of April 2026 and may not reflect the latest changes. All trademarks belong to their respective owners.</p>
     </div>
 </div>
 
@@ -338,6 +407,61 @@
     </div>
     <p class="copyright">&copy; 2026 CrackingInterview. All rights reserved.</p>
 </footer>
+
+<!-- ANIMATED BACKGROUND SCRIPT -->
+<script>
+(function() {
+    var canvas = document.getElementById("bg-canvas");
+    if (!canvas) return;
+    var ctx = canvas.getContext("2d");
+    var particles = [];
+    var mouse = { x: -1000, y: -1000 };
+    var dpr = window.devicePixelRatio || 1;
+    var w, h;
+    function resize() {
+        w = window.innerWidth; h = window.innerHeight;
+        canvas.width = w * dpr; canvas.height = h * dpr;
+        canvas.style.width = w + "px"; canvas.style.height = h + "px";
+        ctx.scale(dpr, dpr);
+    }
+    function createParticles() {
+        particles = [];
+        var count = Math.min(Math.floor((w * h) / 18000), 80);
+        for (var i = 0; i < count; i++) {
+            particles.push({ x: Math.random()*w, y: Math.random()*h, vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3, r:Math.random()*1.5+0.5, o:Math.random()*0.3+0.1 });
+        }
+    }
+    function draw() {
+        ctx.clearRect(0, 0, w, h);
+        for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx; p.y += p.vy;
+            if (p.x < 0) p.x = w; if (p.x > w) p.x = 0;
+            if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
+            ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+            ctx.fillStyle = "rgba(96,165,250,"+p.o+")"; ctx.fill();
+            for (var j = i+1; j < particles.length; j++) {
+                var q = particles[j], dx = p.x-q.x, dy = p.y-q.y, dist = dx*dx+dy*dy;
+                if (dist < 22500) {
+                    ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y);
+                    ctx.strokeStyle = "rgba(96,165,250,"+(1-dist/22500)*0.08+")";
+                    ctx.lineWidth = 0.5; ctx.stroke();
+                }
+            }
+            var mdx=p.x-mouse.x, mdy=p.y-mouse.y, mDist=mdx*mdx+mdy*mdy;
+            if (mDist < 40000) {
+                ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(mouse.x,mouse.y);
+                ctx.strokeStyle = "rgba(139,92,246,"+(1-mDist/40000)*0.15+")";
+                ctx.lineWidth = 0.6; ctx.stroke();
+            }
+        }
+        requestAnimationFrame(draw);
+    }
+    resize(); createParticles(); draw();
+    window.addEventListener("resize", function(){ resize(); createParticles(); });
+    document.addEventListener("mousemove", function(e){ mouse.x=e.clientX; mouse.y=e.clientY; });
+})();
+</script>
 
 </body>
 </html>

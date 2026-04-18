@@ -30,6 +30,9 @@
 </head>
 <body>
 
+<!-- ANIMATED BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
 <nav>
     <a href="index.html" class="nav-brand">
         <img src="img/app-icon.png" alt="CrackingInterview">
@@ -234,6 +237,61 @@
     </div>
     <p class="copyright">&copy; 2026 CrackingInterview. All rights reserved.</p>
 </footer>
+
+<!-- ANIMATED BACKGROUND SCRIPT -->
+<script>
+(function() {
+    var canvas = document.getElementById("bg-canvas");
+    if (!canvas) return;
+    var ctx = canvas.getContext("2d");
+    var particles = [];
+    var mouse = { x: -1000, y: -1000 };
+    var dpr = window.devicePixelRatio || 1;
+    var w, h;
+    function resize() {
+        w = window.innerWidth; h = window.innerHeight;
+        canvas.width = w * dpr; canvas.height = h * dpr;
+        canvas.style.width = w + "px"; canvas.style.height = h + "px";
+        ctx.scale(dpr, dpr);
+    }
+    function createParticles() {
+        particles = [];
+        var count = Math.min(Math.floor((w * h) / 18000), 80);
+        for (var i = 0; i < count; i++) {
+            particles.push({ x: Math.random()*w, y: Math.random()*h, vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3, r:Math.random()*1.5+0.5, o:Math.random()*0.3+0.1 });
+        }
+    }
+    function draw() {
+        ctx.clearRect(0, 0, w, h);
+        for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx; p.y += p.vy;
+            if (p.x < 0) p.x = w; if (p.x > w) p.x = 0;
+            if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
+            ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+            ctx.fillStyle = "rgba(96,165,250,"+p.o+")"; ctx.fill();
+            for (var j = i+1; j < particles.length; j++) {
+                var q = particles[j], dx = p.x-q.x, dy = p.y-q.y, dist = dx*dx+dy*dy;
+                if (dist < 22500) {
+                    ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y);
+                    ctx.strokeStyle = "rgba(96,165,250,"+(1-dist/22500)*0.08+")";
+                    ctx.lineWidth = 0.5; ctx.stroke();
+                }
+            }
+            var mdx=p.x-mouse.x, mdy=p.y-mouse.y, mDist=mdx*mdx+mdy*mdy;
+            if (mDist < 40000) {
+                ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(mouse.x,mouse.y);
+                ctx.strokeStyle = "rgba(139,92,246,"+(1-mDist/40000)*0.15+")";
+                ctx.lineWidth = 0.6; ctx.stroke();
+            }
+        }
+        requestAnimationFrame(draw);
+    }
+    resize(); createParticles(); draw();
+    window.addEventListener("resize", function(){ resize(); createParticles(); });
+    document.addEventListener("mousemove", function(e){ mouse.x=e.clientX; mouse.y=e.clientY; });
+})();
+</script>
 
 </body>
 </html>

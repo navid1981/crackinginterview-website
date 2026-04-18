@@ -12,16 +12,18 @@
       gtag('config', 'AW-18084639735');
     </script>
     <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="CrackingInterview — AI-powered interview preparation tool. Practice coding problems, system design with architecture diagrams, and verbal interviews in 20+ languages.">
-    <title>CrackingInterview — AI-Powered Interview Preparation Tool</title>
+    <meta name="description" content="CrackingInterview — AI-powered technical assistant for interviews. Ace your coding, system design, and verbal interviews on Mac and Windows with real-time AI solutions.">
+    <title>CrackingInterview — AI-Powered Technical Assistant for Interviews</title>
     <link rel="icon" type="image/png" href="img/app-icon.png">
     <link rel="apple-touch-icon" href="img/app-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ANIMATED BACKGROUND -->
 <canvas id="bg-canvas"></canvas>
 
+<!-- NAV -->
 <nav>
     <a href="ads.html" class="nav-brand">
         <img src="img/app-icon.png" alt="CrackingInterview">
@@ -36,7 +38,7 @@
         <a href="#features">Features</a>
         <a href="#plans">Plans</a>
         <a href="compare.html">Compare</a>
-        <a href="guide.html">User Guide</a>
+        <a href="guide.html">Guide</a>
     </div>
 </nav>
 <script>
@@ -47,29 +49,80 @@
 })();
 </script>
 
+<!-- HERO -->
 <section class="hero">
     <div class="floating-orbs">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
-    <h1>Your <span class="highlight">AI-Powered</span> Interview Preparation Tool</h1>
-    <p class="subtitle">Practice coding problems, system design with architecture diagrams, and verbal interviews in 20+ languages. Get instant, expert-level answers powered by premium AI models.</p>
-    <p class="platforms">Available on macOS and Windows &bull; Free to start &bull; Pro $15/mo</p>
+    <h1><span class="highlight">Real-time AI</span> for Every Interview</h1>
+    <p class="hero-price-lead">Free to start &mdash; Pro at $15/month.</p>
+    <p class="subtitle">Real-time AI solutions for coding, system design, and verbal interviews. Extract problems, capture screenshots, record audio — get instant, expert-level answers.</p>
+    <p class="platforms">Available on macOS and Windows</p>
     <div class="cta-row">
         <a href="CrackingInterview_1.0.0_universal.dmg" class="btn btn-primary" data-magnetic download>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             Download for Mac
         </a>
-        <a href="CrackingInterview_1.0.0_x64-setup.exe" class="btn btn-secondary" data-magnetic download>
+        <a href="CrackingInterview_1.0.0_x64-setup.exe" class="btn btn-primary" data-magnetic download>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22l-10-1.91V13.1l10 .15z"/></svg>
             Download for Windows
         </a>
     </div>
-    <img src="img/algorithm.png" alt="CrackingInterview — AI explanation and code solution for an interview problem" class="hero-image" data-parallax loading="lazy">
+    <div class="hero-trust-bar">
+        <span class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            4.9 Rating
+        </span>
+        <span class="trust-sep">&middot;</span>
+        <span class="trust-item">12,000+ Downloads</span>
+        <span class="trust-sep">&middot;</span>
+        <span class="trust-item">macOS &amp; Windows</span>
+        <span class="trust-sep">&middot;</span>
+        <span class="trust-item">20+ Languages</span>
+    </div>
+    <img src="img/algorithm.png" alt="CrackingInterview — AI explanation and code solution for a LeetCode problem" class="hero-image" data-parallax loading="lazy">
 </section>
 
+<!-- INTERVIEW TYPES -->
+<section id="interview-types" class="interview-types-section">
+    <div class="section-inner">
+        <h2 class="section-title reveal">Built for Every Interview Type</h2>
+        <p class="section-subtitle reveal reveal-delay-1">From algorithm puzzles to system design and live verbal interviews.</p>
+        <div class="interview-types-grid">
+            <div class="type-card reveal reveal-delay-1" data-tilt>
+                <div class="tilt-glare"></div>
+                <img src="img/algorithm.gif" alt="Algorithm problem — animated demo of AI explanation and solution code" loading="lazy">
+                <div class="type-card-body">
+                    <span class="type-tag algo">Algorithm</span>
+                    <h3>Coding Problems</h3>
+                    <p>Extract text or capture a screenshot from LeetCode, HackerRank, or any site. Get optimal solutions with step-by-step explanations and complexity analysis.</p>
+                </div>
+            </div>
+            <div class="type-card reveal reveal-delay-2" data-tilt>
+                <div class="tilt-glare"></div>
+                <img src="img/system-design.gif" alt="System design — animated demo of architecture diagrams with Mermaid rendering" loading="lazy">
+                <div class="type-card-body">
+                    <span class="type-tag design">System Design</span>
+                    <h3>Architecture &amp; Diagrams</h3>
+                    <p>Get full system designs with rendered architecture diagrams, ER models, sequence flows, and scaling strategies — not just text.</p>
+                </div>
+            </div>
+            <div class="type-card reveal reveal-delay-3" data-tilt>
+                <div class="tilt-glare"></div>
+                <img src="img/audio.gif" alt="Audio recording — animated demo of system audio capture for verbal interviews" loading="lazy">
+                <div class="type-card-body">
+                    <span class="type-tag audio">Verbal Interview</span>
+                    <h3>Audio Recording</h3>
+                    <p>Record system audio from Zoom or Teams calls. AI transcribes and responds with a structured answer — supports 20+ languages.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- SEE IT IN ACTION -->
 <section class="video-section">
     <div class="section-inner">
         <div class="section-glow"></div>
@@ -87,42 +140,7 @@
     </div>
 </section>
 
-<section id="interview-types" class="interview-types-section">
-    <div class="section-inner">
-        <h2 class="section-title reveal">Built for Every Interview Type</h2>
-        <p class="section-subtitle reveal reveal-delay-1">From algorithm puzzles to system design and live verbal interviews.</p>
-        <div class="interview-types-grid">
-            <div class="type-card reveal reveal-delay-1" data-tilt>
-                <div class="tilt-glare"></div>
-                <img src="img/algorithm.gif" alt="Algorithm problem — AI explanation and solution code" loading="lazy">
-                <div class="type-card-body">
-                    <span class="type-tag algo">Algorithm</span>
-                    <h3>Coding Problems</h3>
-                    <p>Extract text or capture a screenshot from LeetCode, HackerRank, or any site. Get optimal solutions with step-by-step explanations and complexity analysis.</p>
-                </div>
-            </div>
-            <div class="type-card reveal reveal-delay-2" data-tilt>
-                <div class="tilt-glare"></div>
-                <img src="img/system-design.gif" alt="System design — architecture diagrams with Mermaid rendering" loading="lazy">
-                <div class="type-card-body">
-                    <span class="type-tag design">System Design</span>
-                    <h3>Architecture &amp; Diagrams</h3>
-                    <p>Get full system designs with rendered architecture diagrams, ER models, sequence flows, and scaling strategies — not just text.</p>
-                </div>
-            </div>
-            <div class="type-card reveal reveal-delay-3" data-tilt>
-                <div class="tilt-glare"></div>
-                <img src="img/audio.gif" alt="Audio recording — system audio capture for verbal interviews" loading="lazy">
-                <div class="type-card-body">
-                    <span class="type-tag audio">Verbal Interview</span>
-                    <h3>Audio Transcription</h3>
-                    <p>Record system audio and get real-time transcription with AI-powered structured answers — supports 20+ languages including English, Spanish, French, German, and more.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+<!-- HOW IT WORKS -->
 <section id="how-it-works" class="how-it-works-section">
     <div class="section-inner">
         <h2 class="section-title reveal">How It Works</h2>
@@ -130,19 +148,19 @@
         <div class="steps">
             <div class="step-row reveal">
                 <div class="step-text">
-                    <div class="step-num-circle">1</div>
+                    <div class="step-num-badge" style="--step-color:#3b82f6;--step-delay:0s">01</div>
                     <h3>Connect Chrome</h3>
-                    <p>Click <strong>Open Chrome</strong> in the header. The app launches a Chrome window connected via DevTools Protocol. The header shows <strong>"Chrome Ready"</strong> when connected.</p>
+                    <p>Click <strong>Open Chrome</strong> — the app connects instantly via DevTools Protocol. The header shows <strong>"Chrome Ready"</strong> when you're set.</p>
                 </div>
                 <div class="step-img">
-                    <img src="img/main-chrome.png" alt="Main screen with Chrome Ready status" data-parallax loading="lazy">
+                    <img src="img/main-chrome.png" alt="Main screen with Chrome Ready status and LeetCode tab selected" data-parallax loading="lazy">
                 </div>
             </div>
             <div class="step-row reverse reveal">
                 <div class="step-text">
-                    <div class="step-num-circle">2</div>
+                    <div class="step-num-badge" style="--step-color:#6366f1;--step-delay:0.2s">02</div>
                     <h3>Select Your Input Source</h3>
-                    <p>The dropdown shows all open Chrome tabs with live thumbnails, your display screens for full-screen capture, and Audio for verbal interviews. Pick the source you want to analyze.</p>
+                    <p>Pick a Chrome tab, a display screen, or Audio. Live thumbnails make it instant to find the right source.</p>
                 </div>
                 <div class="step-img">
                     <img src="img/input-source.png" alt="Input source dropdown showing Chrome tabs, displays, and audio" data-parallax loading="lazy">
@@ -150,28 +168,29 @@
             </div>
             <div class="step-row reveal">
                 <div class="step-text">
-                    <div class="step-num-circle">3</div>
+                    <div class="step-num-badge" style="--step-color:#8b5cf6;--step-delay:0.4s">03</div>
                     <h3>Hit Solve</h3>
-                    <p>Press <strong>Solve</strong> or use a global hotkey. The app extracts the problem and sends it to a premium AI model. A live progress stepper shows the model and prompt being used.</p>
+                    <p>Press <strong>Solve</strong> or trigger a global hotkey. A live progress stepper shows exactly which AI model is working.</p>
                 </div>
                 <div class="step-img">
-                    <img src="img/algorithm-stepper.png" alt="Progress stepper showing Extract and Asking AI steps" data-parallax loading="lazy">
+                    <img src="img/algorithm-stepper.png" alt="Progress stepper showing Extract and Asking AI steps with model info" data-parallax loading="lazy">
                 </div>
             </div>
             <div class="step-row reverse reveal">
                 <div class="step-text">
-                    <div class="step-num-circle">4</div>
+                    <div class="step-num-badge" style="--step-color:#06b6d4;--step-delay:0.6s">04</div>
                     <h3>Get Your Answer</h3>
-                    <p>Within seconds you get a concise <strong>Explanation</strong> with the approach and complexity analysis, plus a complete <strong>Solution</strong> with syntax-highlighted, copy-ready code.</p>
+                    <p>Within seconds: a clear <strong>Explanation</strong> with complexity analysis, plus a complete <strong>Solution</strong> with syntax-highlighted, copy-ready code.</p>
                 </div>
                 <div class="step-img">
-                    <img src="img/algorithm.png" alt="AI solution with explanation, complexity analysis, and code" data-parallax loading="lazy">
+                    <img src="img/algorithm.png" alt="AI solution with explanation, complexity analysis, and syntax-highlighted code" data-parallax loading="lazy">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- FEATURES -->
 <section id="features" class="features-section">
     <div class="section-inner">
         <h2 class="section-title reveal">Powerful Customization</h2>
@@ -179,7 +198,7 @@
         <div class="showcase-grid">
             <div class="showcase-card reveal reveal-delay-1" data-tilt>
                 <div class="tilt-glare"></div>
-                <img src="img/setting-ai-models.png" alt="AI Models settings — 4 premium models" loading="lazy">
+                <img src="img/setting-ai-models.png" alt="AI Models settings — 4 premium models, Text Extraction and Screenshot Capture toggle" loading="lazy">
                 <div class="showcase-card-body">
                     <h3>Premium AI Models</h3>
                     <p>Choose from GPT-5, Claude Sonnet, Gemini 3 Flash, and Grok. Switch between Text Extraction and Screenshot Capture modes.</p>
@@ -187,7 +206,7 @@
             </div>
             <div class="showcase-card reveal reveal-delay-2" data-tilt>
                 <div class="tilt-glare"></div>
-                <img src="img/setting-prompts.png" alt="Prompts settings with 6 built-in prompts" loading="lazy">
+                <img src="img/setting-prompts.png" alt="Prompts settings with 6 built-in prompts, language selection, and Upload Docs button" loading="lazy">
                 <div class="showcase-card-body">
                     <h3>Custom Prompts &amp; Document Upload</h3>
                     <p>6 built-in prompts for algorithms, system design, code review, and more. Edit system and user prompts, create your own, or upload documents (resume, cover letter) as reusable placeholders.</p>
@@ -195,7 +214,7 @@
             </div>
             <div class="showcase-card reveal reveal-delay-3" data-tilt>
                 <div class="tilt-glare"></div>
-                <img src="img/settings-hotkeys.png" alt="Fully customizable global hotkeys" loading="lazy">
+                <img src="img/settings-hotkeys.png" alt="Fully customizable global hotkeys for Solve, Navigation, and App control" loading="lazy">
                 <div class="showcase-card-body">
                     <h3>Global Hotkeys</h3>
                     <p>Fully customizable keyboard shortcuts that work even when the app is in the background. Solve, navigate, and control without switching windows.</p>
@@ -203,71 +222,138 @@
             </div>
             <div class="showcase-card reveal reveal-delay-4" data-tilt>
                 <div class="tilt-glare"></div>
-                <img src="img/audio-languages.png" alt="Audio language selection with 20+ languages" loading="lazy">
+                <img src="img/setting-app.png" alt="App settings — transparency slider, light/dark theme, stealth mode toggle" loading="lazy">
                 <div class="showcase-card-body">
-                    <h3>20+ Languages</h3>
-                    <p>Record system audio and get AI-powered transcription and answers in English, Spanish, French, German, Japanese, Korean, Chinese, Hindi, Arabic, and many more.</p>
+                    <h3>App Settings</h3>
+                    <p>Adjustable window transparency, Light/Dark theme, and Stealth Mode — hidden from screen sharing, screenshots, Dock, and Taskbar.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- MULTI-LANGUAGE AUDIO -->
+<section class="audio-lang-section">
+    <div class="section-inner">
+        <div class="audio-lang-row reveal">
+            <div class="audio-lang-text">
+                <h2 class="section-title" style="text-align:left;">Multi-Language Audio</h2>
+                <p>Record system audio from Zoom, Teams, or any application. The AI transcribes and analyzes interviews in <strong>20+ languages</strong> — including English, Spanish, French, German, Japanese, Korean, Chinese, Hindi, Arabic, and more.</p>
+                <p>Select your interview language or let the app auto-detect it. Perfect for international candidates interviewing across borders.</p>
+                <ul class="audio-lang-features">
+                    <li>System audio capture — no microphone needed</li>
+                    <li>Auto-detect multilingual conversations</li>
+                    <li>Real-time transcription via Deepgram</li>
+                    <li>Up to 10 hours of recording per month (Pro)</li>
+                </ul>
+            </div>
+            <div class="audio-lang-img">
+                <img src="img/audio-languages.png" alt="Audio language selection dropdown with 20+ languages" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURE HIGHLIGHTS -->
 <section class="highlights-section">
     <div class="section-inner">
-        <div class="highlights-grid">
-            <div class="highlight-card reveal reveal-delay-1" data-tilt>
+        <div class="bento-grid">
+            <!-- Large card: BYOK -->
+            <div class="bento-card bento-large bento-byok reveal reveal-delay-1" data-tilt>
                 <div class="tilt-glare"></div>
-                <div class="highlight-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                </div>
-                <h3>Always on Top</h3>
-                <p>The app window stays above all other windows so your AI assistant is always visible while you work.</p>
-            </div>
-            <div class="highlight-card reveal reveal-delay-2" data-tilt>
-                <div class="tilt-glare"></div>
-                <div class="highlight-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                </div>
-                <h3>Text Extraction</h3>
-                <p>Extract problem text directly from Chrome tabs — fast and accurate for text-based coding problems.</p>
-            </div>
-            <div class="highlight-card reveal reveal-delay-3" data-tilt>
-                <div class="tilt-glare"></div>
-                <div class="highlight-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                </div>
-                <h3>Screenshot Capture</h3>
-                <p>Capture browser tabs or your entire screen. Perfect for problems with images, diagrams, or tables.</p>
-            </div>
-            <div class="highlight-card reveal reveal-delay-1" data-tilt>
-                <div class="tilt-glare"></div>
-                <div class="highlight-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
-                </div>
-                <h3>Audio Transcription</h3>
-                <p>Record system audio for verbal interview practice. AI transcribes and responds in real time — 20+ languages supported.</p>
-            </div>
-            <div class="highlight-card reveal reveal-delay-2" data-tilt>
-                <div class="tilt-glare"></div>
-                <div class="highlight-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg>
-                </div>
-                <h3>Resume Upload</h3>
-                <p>Upload your resume, cover letter, or any document. Use placeholders in prompts to inject document content as AI context.</p>
-            </div>
-            <div class="highlight-card reveal reveal-delay-3" data-tilt>
-                <div class="tilt-glare"></div>
-                <div class="highlight-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <div class="bento-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
                 </div>
                 <h3>Bring Your Own Key</h3>
-                <p>Free users can enter their own API key for unlimited AI calls — no subscription required.</p>
+                <p>Enter your own OpenAI or Anthropic API key and use the app <strong>free forever</strong> — no subscription, no limits. No other competitor offers this on the free tier.</p>
+                <div class="bento-badge bento-badge-green">Free Forever</div>
+            </div>
+            <!-- Small cards -->
+            <div class="bento-card bento-small reveal reveal-delay-1" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="bento-icon bento-icon-sm">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Always on Top</h3>
+                <p>Stays above all windows — always visible during your interview.</p>
+            </div>
+            <div class="bento-card bento-small reveal reveal-delay-2" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="bento-icon bento-icon-sm">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <h3>Text Extraction</h3>
+                <p>Extract problems directly from Chrome tabs — fast and precise.</p>
+            </div>
+            <div class="bento-card bento-small reveal reveal-delay-3" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="bento-icon bento-icon-sm">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                </div>
+                <h3>Screenshot Capture</h3>
+                <p>Capture any tab or screen — handles images, tables, and diagrams.</p>
+            </div>
+            <div class="bento-card bento-small reveal reveal-delay-1" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="bento-icon bento-icon-sm">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                </div>
+                <h3>Audio Recording</h3>
+                <p>Record system audio — AI transcribes and responds in 20+ languages.</p>
+            </div>
+            <div class="bento-card bento-small reveal reveal-delay-2" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="bento-icon bento-icon-sm">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg>
+                </div>
+                <h3>Document Upload</h3>
+                <p>Upload your resume and inject it into any prompt with <code>{PLACEHOLDER}</code>.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- WHY US -->
+<section class="why-us-index-section">
+    <div class="section-inner">
+        <h2 class="section-title reveal">Why CrackingInterview?</h2>
+        <p class="section-subtitle reveal reveal-delay-1">The same AI power as tools costing 10–20x more — at a price that's actually fair.</p>
+        <div class="why-us-index-grid">
+            <div class="why-index-card reveal reveal-delay-1" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="why-index-icon">💰</div>
+                <h3>10x Cheaper</h3>
+                <div class="why-index-compare">
+                    <span class="why-compare-them">InterviewCoder = $299/mo</span>
+                    <span class="why-compare-us">We = $15/mo</span>
+                </div>
+                <p>Same real-time AI. Same stealth mode. A fraction of the price.</p>
+            </div>
+            <div class="why-index-card reveal reveal-delay-2" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="why-index-icon">🔑</div>
+                <h3>BYOK — Free Forever</h3>
+                <div class="why-index-compare">
+                    <span class="why-compare-them">Competitors = no BYOK option</span>
+                    <span class="why-compare-us">We = unlimited with your key</span>
+                </div>
+                <p>Use your own OpenAI or Anthropic API key — pay nothing, ever.</p>
+            </div>
+            <div class="why-index-card reveal reveal-delay-3" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="why-index-icon">📐</div>
+                <h3>Mermaid Diagrams</h3>
+                <div class="why-index-compare">
+                    <span class="why-compare-them">Competitors = text-only answers</span>
+                    <span class="why-compare-us">We = rendered architecture diagrams</span>
+                </div>
+                <p>System design answers include real rendered diagrams — not just text.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLANS -->
 <section id="plans" class="plans-section">
     <div class="section-inner">
         <h2 class="section-title reveal">Plans</h2>
@@ -289,6 +375,7 @@
                 <div class="tilt-glare"></div>
                 <div class="plan-badge">POPULAR</div>
                 <h3>Pro — $15/mo</h3>
+                <p class="plan-vs">vs. $299/mo at InterviewCoder &middot; $25/mo at FinalRound</p>
                 <ul>
                     <li>150 AI calls per month</li>
                     <li>10 hours of audio recording</li>
@@ -299,14 +386,49 @@
                 </ul>
             </div>
         </div>
-        <p class="plans-note">Subscription is managed through the app after download.</p>
+        <p class="plans-note">
+            Subscription is managed through the app after download. <a href="compare.html">See how we compare</a> to other tools.
+        </p>
     </div>
 </section>
 
+<!-- REQUIREMENTS -->
+<section class="requirements-section">
+    <div class="section-inner">
+        <h2 class="section-title reveal">Requirements</h2>
+        <p class="section-subtitle reveal reveal-delay-1">Quick setup — get running in under a minute.</p>
+        <div class="requirements-grid">
+            <div class="requirement-card reveal reveal-delay-1" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="requirement-icon"><img src="img/chrome-logo.svg" alt="Chrome" width="36" height="36"></div>
+                <h3>Google Chrome</h3>
+                <p>Chrome must be installed. The app connects to Chrome to read tabs and extract content.</p>
+            </div>
+            <div class="requirement-card reveal reveal-delay-2" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="requirement-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="#b0b0b0"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                </div>
+                <h3>macOS Permissions</h3>
+                <p>Grant <strong>Accessibility</strong> (hotkeys) and <strong>Screen &amp; System Audio Recording</strong> (capture) in System Settings.</p>
+            </div>
+            <div class="requirement-card reveal reveal-delay-3" data-tilt>
+                <div class="tilt-glare"></div>
+                <div class="requirement-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="#00adef"><path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22l-10-1.91V13.1l10 .15z"/></svg>
+                </div>
+                <h3>Windows Permissions</h3>
+                <p>Allow the app through Windows Security when prompted. No additional system permissions required.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
 <section class="cta-section">
     <div class="section-inner">
         <h2 class="section-title reveal">Ready to Ace Your Next Interview?</h2>
-        <p class="section-subtitle reveal reveal-delay-1">Download CrackingInterview for free and start practicing in seconds.</p>
+        <p class="section-subtitle reveal reveal-delay-1">Download CrackingInterview for free and start solving problems in seconds.</p>
         <div class="cta-row">
             <a href="CrackingInterview_1.0.0_universal.dmg" class="btn btn-primary" data-magnetic download>
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -320,11 +442,36 @@
     </div>
 </section>
 
+<!-- NOTICE -->
+<div class="notice-section">
+    <div class="notice-box">
+        <h3>User Responsibility</h3>
+        <p>CrackingInterview is a productivity tool. <strong>You are solely responsible for how you use this application</strong> and for ensuring your use complies with all applicable laws, regulations, and policies. See our <a href="terms.html">Terms of Service</a>.</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
 <footer>
+    <div class="footer-trust">
+        <span class="footer-trust-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            No data stored
+        </span>
+        <span class="footer-trust-sep">&middot;</span>
+        <span class="footer-trust-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            Stealth mode
+        </span>
+        <span class="footer-trust-sep">&middot;</span>
+        <span class="footer-trust-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Cancel anytime
+        </span>
+    </div>
     <div class="footer-links">
         <a href="index.html">Home</a>
-        <a href="compare.html">Compare</a>
         <a href="guide.html">User Guide</a>
+        <a href="compare.html">Compare</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
         <a href="mailto:support@crackinginterview.org">Contact</a>
@@ -332,8 +479,10 @@
     <p class="copyright">&copy; 2026 CrackingInterview. All rights reserved.</p>
 </footer>
 
+<!-- ANIMATED BACKGROUND + SCROLL REVEAL + ADVANCED EFFECTS -->
 <script>
 (function() {
+    // ── Particle Network Background ──
     var canvas = document.getElementById('bg-canvas');
     if (canvas) {
     var ctx = canvas.getContext('2d');
@@ -341,25 +490,201 @@
     var mouse = { x: -1000, y: -1000 };
     var dpr = window.devicePixelRatio || 1;
     var w, h;
-    function resize() { w = window.innerWidth; h = window.innerHeight; canvas.width = w * dpr; canvas.height = h * dpr; canvas.style.width = w + 'px'; canvas.style.height = h + 'px'; ctx.scale(dpr, dpr); }
-    function createParticles() { particles = []; var count = Math.min(Math.floor((w * h) / 18000), 80); for (var i = 0; i < count; i++) { particles.push({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3, r: Math.random() * 1.5 + 0.5, o: Math.random() * 0.3 + 0.1 }); } }
-    function draw() { ctx.clearRect(0, 0, w, h); var scrollY = window.scrollY || window.pageYOffset; for (var i = 0; i < particles.length; i++) { var p = particles[i]; p.x += p.vx; p.y += p.vy; if (p.x < 0) p.x = w; if (p.x > w) p.x = 0; if (p.y < 0) p.y = h; if (p.y > h) p.y = 0; ctx.beginPath(); ctx.arc(p.x, p.y - (scrollY * 0.05 % h), p.r, 0, Math.PI * 2); ctx.fillStyle = 'rgba(96, 165, 250, ' + p.o + ')'; ctx.fill(); for (var j = i + 1; j < particles.length; j++) { var q = particles[j]; var dx = p.x - q.x; var dy = p.y - q.y; var dist = dx * dx + dy * dy; if (dist < 22500) { ctx.beginPath(); ctx.moveTo(p.x, p.y - (scrollY * 0.05 % h)); ctx.lineTo(q.x, q.y - (scrollY * 0.05 % h)); ctx.strokeStyle = 'rgba(96, 165, 250, ' + ((1 - dist / 22500) * 0.08) + ')'; ctx.lineWidth = 0.5; ctx.stroke(); } } } requestAnimationFrame(draw); }
-    resize(); createParticles(); draw();
+
+    function resize() {
+        w = window.innerWidth;
+        h = window.innerHeight;
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.scale(dpr, dpr);
+    }
+
+    function createParticles() {
+        particles = [];
+        var count = Math.min(Math.floor((w * h) / 18000), 80);
+        for (var i = 0; i < count; i++) {
+            particles.push({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                vx: (Math.random() - 0.5) * 0.3,
+                vy: (Math.random() - 0.5) * 0.3,
+                r: Math.random() * 1.5 + 0.5,
+                o: Math.random() * 0.3 + 0.1
+            });
+        }
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, w, h);
+        var scrollY = window.scrollY || window.pageYOffset;
+        for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0) p.x = w;
+            if (p.x > w) p.x = 0;
+            if (p.y < 0) p.y = h;
+            if (p.y > h) p.y = 0;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y - (scrollY * 0.05 % h), p.r, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(96, 165, 250, ' + p.o + ')';
+            ctx.fill();
+            for (var j = i + 1; j < particles.length; j++) {
+                var q = particles[j];
+                var dx = p.x - q.x;
+                var dy = p.y - q.y;
+                var dist = dx * dx + dy * dy;
+                if (dist < 22500) {
+                    var alpha = (1 - dist / 22500) * 0.08;
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y - (scrollY * 0.05 % h));
+                    ctx.lineTo(q.x, q.y - (scrollY * 0.05 % h));
+                    ctx.strokeStyle = 'rgba(96, 165, 250, ' + alpha + ')';
+                    ctx.lineWidth = 0.5;
+                    ctx.stroke();
+                }
+            }
+            var mdx = p.x - mouse.x;
+            var mdy = p.y - (mouse.y + scrollY * 0.05 % h);
+            var mDist = mdx * mdx + mdy * mdy;
+            if (mDist < 40000) {
+                var mAlpha = (1 - mDist / 40000) * 0.15;
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y - (scrollY * 0.05 % h));
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.strokeStyle = 'rgba(139, 92, 246, ' + mAlpha + ')';
+                ctx.lineWidth = 0.6;
+                ctx.stroke();
+            }
+        }
+        requestAnimationFrame(draw);
+    }
+
+    resize();
+    createParticles();
+    draw();
     window.addEventListener('resize', function() { resize(); createParticles(); });
     document.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
-    }
+    } // end canvas
+
+    // ── Scroll Reveal ──
     var reveals = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) { var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }); reveals.forEach(function(el) { observer.observe(el); }); } else { reveals.forEach(function(el) { el.classList.add('visible'); }); }
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function(el) { observer.observe(el); });
+    } else {
+        reveals.forEach(function(el) { el.classList.add('visible'); });
+    }
+
+    // ── 3D Card Tilt Effect ──
     var tiltCards = document.querySelectorAll('[data-tilt]');
-    tiltCards.forEach(function(card) { card.addEventListener('mousemove', function(e) { var rect = card.getBoundingClientRect(); var x = e.clientX - rect.left; var y = e.clientY - rect.top; var cx = rect.width / 2; var cy = rect.height / 2; card.style.transform = 'perspective(800px) rotateX(' + ((y - cy) / cy * -6) + 'deg) rotateY(' + ((x - cx) / cx * 6) + 'deg) scale3d(1.02, 1.02, 1.02)'; var glare = card.querySelector('.tilt-glare'); if (glare) { glare.style.setProperty('--glare-x', (x / rect.width * 100) + '%'); glare.style.setProperty('--glare-y', (y / rect.height * 100) + '%'); } }); card.addEventListener('mouseleave', function() { card.style.transform = ''; card.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)'; setTimeout(function() { card.style.transition = ''; }, 500); }); });
+    var maxTilt = 6;
+    tiltCards.forEach(function(card) {
+        card.addEventListener('mousemove', function(e) {
+            var rect = card.getBoundingClientRect();
+            var x = e.clientX - rect.left;
+            var y = e.clientY - rect.top;
+            var cx = rect.width / 2;
+            var cy = rect.height / 2;
+            var rotateX = ((y - cy) / cy) * -maxTilt;
+            var rotateY = ((x - cx) / cx) * maxTilt;
+            card.style.transform = 'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.02, 1.02, 1.02)';
+            var glare = card.querySelector('.tilt-glare');
+            if (glare) {
+                var px = (x / rect.width) * 100;
+                var py = (y / rect.height) * 100;
+                glare.style.setProperty('--glare-x', px + '%');
+                glare.style.setProperty('--glare-y', py + '%');
+            }
+        });
+        card.addEventListener('mouseleave', function() {
+            card.style.transform = '';
+            card.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+            setTimeout(function() { card.style.transition = ''; }, 500);
+        });
+    });
+
+    // ── Magnetic Cursor Effect on Buttons ──
     var magneticBtns = document.querySelectorAll('[data-magnetic]');
-    magneticBtns.forEach(function(btn) { btn.addEventListener('mousemove', function(e) { var rect = btn.getBoundingClientRect(); btn.style.transform = 'translate(' + ((e.clientX - rect.left - rect.width / 2) * 0.3) + 'px, ' + ((e.clientY - rect.top - rect.height / 2) * 0.3) + 'px)'; }); btn.addEventListener('mouseleave', function() { btn.style.transform = ''; }); });
+    magneticBtns.forEach(function(btn) {
+        btn.addEventListener('mousemove', function(e) {
+            var rect = btn.getBoundingClientRect();
+            var x = e.clientX - rect.left - rect.width / 2;
+            var y = e.clientY - rect.top - rect.height / 2;
+            var pull = 0.3;
+            btn.style.transform = 'translate(' + (x * pull) + 'px, ' + (y * pull) + 'px)';
+        });
+        btn.addEventListener('mouseleave', function() {
+            btn.style.transform = '';
+        });
+    });
+
+    // ── Scroll-Linked Parallax for Images ──
     var parallaxEls = document.querySelectorAll('[data-parallax]');
     var ticking = false;
-    window.addEventListener('scroll', function() { if (!ticking) { requestAnimationFrame(function() { var vh = window.innerHeight; parallaxEls.forEach(function(el) { var rect = el.getBoundingClientRect(); if (rect.bottom > 0 && rect.top < vh) { el.style.transform = 'translateY(' + ((rect.top + rect.height / 2 - vh / 2) * 0.04) + 'px)'; } }); ticking = false; }); ticking = true; } }, { passive: true });
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) { anchor.addEventListener('click', function(e) { var target = document.querySelector(this.getAttribute('href')); if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 60, behavior: 'smooth' }); } }); });
+    function updateParallax() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var vh = window.innerHeight;
+        parallaxEls.forEach(function(el) {
+            var rect = el.getBoundingClientRect();
+            if (rect.bottom > 0 && rect.top < vh) {
+                var center = rect.top + rect.height / 2;
+                var offset = (center - vh / 2) * 0.04;
+                el.style.transform = 'translateY(' + offset + 'px)';
+            }
+        });
+        ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // ── Split Text Animation on Hero Subtitle ──
     var subtitle = document.querySelector('.hero .subtitle');
-    if (subtitle) { var text = subtitle.textContent.trim(); var words = text.split(/\s+/); subtitle.innerHTML = ''; words.forEach(function(word, i) { var span = document.createElement('span'); span.className = 'split-word'; span.textContent = word; span.style.setProperty('--word-delay', (0.9 + i * 0.06) + 's'); subtitle.appendChild(span); if (i < words.length - 1) subtitle.appendChild(document.createTextNode(' ')); }); }
+    if (subtitle) {
+        var text = subtitle.textContent.trim();
+        var words = text.split(/\s+/);
+        subtitle.innerHTML = '';
+        var baseDelay = 0.9;
+        var stagger = 0.06;
+        words.forEach(function(word, i) {
+            var span = document.createElement('span');
+            span.className = 'split-word';
+            span.textContent = word;
+            span.style.setProperty('--word-delay', (baseDelay + i * stagger) + 's');
+            subtitle.appendChild(span);
+            if (i < words.length - 1) {
+                subtitle.appendChild(document.createTextNode(' '));
+            }
+        });
+    }
+
+    // ── Smooth Scroll with Navbar Offset ──
+    var navHeight = 60;
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            var target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                var top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                window.scrollTo({ top: top, behavior: 'smooth' });
+            }
+        });
+    });
 })();
 </script>
 
